@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  body {font-family: "Lato", sans-serif;}
+
+  .sidebar {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #4e73df;
+    overflow-x: hidden;
+    padding-top: 16px;
+  }
+
+  .sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+  }
+
+  .sidebar a:hover {
+    color: grey;
+  }
+
+  .main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    padding: 0px 10px;
+    background-color: #f1f1f1;
+    height: 100%;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  .column {
+    float: left;
+    width: 40%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+
+  .contributors {
+    padding: 50px;
+    text-align: center;
+    background-color: #4e73df;
+    color: white;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .title {
+    color: grey;
+  }
+
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+
+</style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+    <a href="dashboard.html"><i class="fa fa-area-chart"></i> Dashboard</a>
+    <a href="contributors.html"><i class="fa fa-fw fa-user"></i> Meet the Team</a>
+    <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+  </div>
+
+  <div class="main">
+    <div class="contributors">
+      <h1>Meet the Team</h1>
+      <p>Some text about who we are and what we do.</p>
+      <p>Blah blah blah...</p>
+    </div>
+
+    <h2 style="text-align:center">Our Team</h2>
+    <div class="row justify-content-center">
+      <div class="column">
+        <div class="card">
+          <img src="/img/dylan.png" alt="Dylan" style="width:100%">
+          <div class="container">
+            <h2>Dylan Mair</h2>
+            <p class="title">Title</p>
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p>dmair@ischool.berkeley.edu</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="/img/ashley.png" alt="Ashley" style="width:100%">
+          <div class="container">
+            <h2>Ashley Moss</h2>
+            <p class="title">Title</p>
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p>ashley.moss@ischool.berkeley.edu</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="/img/emma.png" alt="Emma" style="width:100%">
+          <div class="container">
+            <h2>Emma Tebbe</h2>
+            <p class="title">Title</p>
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p>emma.tebbe@ischool.berkeley.edu</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="/img/emma.png" alt="Bona" style="width:100%">
+          <div class="container">
+            <h2>Bona Lee</h2>
+            <p class="title">Title</p>
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p>bona.lee@ischool.berkeley.edu</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

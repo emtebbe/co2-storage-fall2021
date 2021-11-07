@@ -1,58 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>California Carbon Storage Optimization</title>
-    <!-- Add some CSS to change client UI -->
-    <style>
-    body {
-        background-color: #232F3E;
-        }
-    label, button {
-        color: #FF9900;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 20px;
-        margin-left: 40px;
-        }
-     input {
-        color: #232F3E;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 20px;
-        margin-left: 20px;
-        }
-    </style>
-    <script>
-        // define the callAPI function that takes a first name and last name as parameters
-        var callAPI = (firstName,lastName)=>{
-            // instantiate a headers object
-            var myHeaders = new Headers();
-            // add content type header to object
-            myHeaders.append("Content-Type", "application/json");
-            // using built in JSON utility package turn object to string and store in a variable
-            var raw = JSON.stringify({"firstName":firstName,"lastName":lastName});
-            // create a JSON object with parameters for API call and store in a variable
-            var requestOptions = {
-                method: 'POST',
-                headers: myHeaders,
-                body: raw,
-                redirect: 'follow'
-            };
-            // make API call with parameters and use promises to get response
-            fetch("https://l9khlco5jb.execute-api.us-west-2.amazonaws.com/dev", requestOptions)
-            .then(response => response.text())
-            .then(result => alert(JSON.parse(result).body))
-            .catch(error => console.log('error', error));
-        }
-    </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  body {font-family: "Lato", sans-serif;}
+
+  .sidebar {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #4e73df;
+    overflow-x: hidden;
+    padding-top: 16px;
+  }
+
+  .sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+  }
+
+  .sidebar a:hover {
+    color: grey;
+  }
+
+  .main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    padding: 0px 10px;
+    background-color: #f1f1f1;
+    height: 100%;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+  .header {
+    padding: 50px;
+    text-align: center;
+    color: #4e73df;
+  }
+
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+
+</style>
 </head>
 <body>
-    <form>
-        <label>First Name :</label>
-        <input type="text" id="fName">
-        <label>Last Name :</label>
-        <input type="text" id="lName">
-        <!-- set button onClick method to call function we defined passing input values as parameters -->
-        <button type="button" onclick="callAPI(document.getElementById('fName').value,document.getElementById('lName').value)">Call API</button>
-    </form>
+
+  <div class="sidebar">
+    <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+    <a href="dashboard.html"><i class="fa fa-area-chart"></i> Dashboard</a>
+    <a href="contributors.html"><i class="fa fa-fw fa-user"></i> Meet the Team</a>
+    <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+  </div>
+
+  <div class="main">
+    <div class="header">
+      <h1>CO<sub>2</sub> Storage Transit Optimization</h1>
+      <hr>
+    </div>
+
+    <h2>Purpose</h2>
+    <p>Placeholder for Website Intro</p>
+    <p>...</p>
+    <p>...</p>
+  </div>
+
 </body>
 </html>
