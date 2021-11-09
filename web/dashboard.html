@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  body {font-family: "Lato", sans-serif;}
+
+  .sidebar {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #4e73df;
+    overflow-x: hidden;
+    padding-top: 16px;
+  }
+
+  .sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+  }
+
+  .sidebar a:hover {
+    color: grey;
+  }
+
+  .main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    padding: 0px 10px;
+    background-color: #f1f1f1;
+    height: 100%;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  *, ::after, ::before {
+    box-sizing: border-box;
+  }
+
+  .column {
+    position: relative;
+    width: 16%;
+    padding-right: .75rem;
+    padding-left: .75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .col-md-6 {
+      flex: 0 0 16%;
+      max-width: 30%;
+    }
+  }
+
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #e3e6f0;
+    border-radius: .35rem;
+  }
+
+  .card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+  }
+
+  .header {
+    padding: 50px;
+    text-align: center;
+    color: #4e73df;
+  }
+
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+
+  .align-items-center {
+    align-items: center;
+  }
+
+  .no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .col {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    margin-right: .5rem;
+  }
+
+  .col-auto {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+    color: #dddfeb;
+    font-size: 2em;
+  }
+
+  .shadow {
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
+  }
+
+  .card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: #f8f9fc;
+    border-bottom: 1px solid #e3e6f0;
+    border-radius: calc(.35rem - 1px) calc(.35rem - 1px) 0 0;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+  }
+
+  .chart {
+    position: relative;
+    height: 35rem;
+    width: 100%;
+  }
+
+</style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+    <a href="dashboard.html"><i class="fa fa-area-chart"></i> Dashboard</a>
+    <a href="contributors.html"><i class="fa fa-fw fa-user"></i> Meet the Team</a>
+    <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+  </div>
+
+  <div class="main">
+    <div class="header">
+      <h1>Dashboard</h1>
+      <hr>
+    </div>
+
+    <div class="row">
+      <form style="margin-bottom: 1.5rem;">
+        <label for="industry">Industry:</label>
+        <select name="industry" id="industry">
+          <option value="all">All</option>
+          <option value="cement">Cement</option>
+          <option value="steel">Steel</option>
+        </select>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+
+    <div class="row">
+      <div class="column col-md-6">
+        <div class="card" style="border-left: .25rem solid #e74a3b;">
+          <div class="card-body">
+            <div class="row no-gutters align-items-center">
+              <div class="col">
+                <div style="color:#e74a3b;text-transform:uppercase;font-size:.7rem;font-weight:700;margin-bottom:.25rem;">
+                  Total Cost
+                </div>
+                <div><h5 style="color:#5a5c69;font-size:1.25rem;font-weight:700;margin-bottom:0;">$1,234,567</h5></div>
+              </div>
+              <div class="col-auto">
+                <i class="fa fa-automobile"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="column col-md-6">
+        <div class="card" style="border-left: .25rem solid #1cc88a;">
+          <div class="card-body">
+            <div class="row no-gutters align-items-center">
+              <div class="col">
+                <div style="color:#1cc88a;text-transform:uppercase;font-size:.7rem;font-weight:700;margin-bottom:.25rem;">
+                  Cost per Ton
+                </div>
+                <div><h5 style="color:#5a5c69;font-size:1.25rem;font-weight:700;margin-bottom:0;">$1,234 per Ton</h5></div>
+              </div>
+              <div class="col-auto">
+                <i class="fa fa-level-down"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="column col-md-6">
+        <div class="card" style="border-left: .25rem solid #f6c23e;">
+          <div class="card-body">
+            <div class="row no-gutters align-items-center">
+              <div class="col">
+                <div style="color:#f6c23e;text-transform:uppercase;font-size:.7rem;font-weight:700;margin-bottom:.25rem;">
+                  Metric 3
+                </div>
+                <div><h5 style="color:#5a5c69;font-size:1.25rem;font-weight:700;margin-bottom:0;">123,456</h5></div>
+              </div>
+              <div class="col-auto">
+                <i class="fa fa-gears"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="column col-md-6">
+        <div class="card" style="border-left: .25rem solid #f6c23e;">
+          <div class="card-body">
+            <div class="row no-gutters align-items-center">
+              <div class="col">
+                <div style="color:#f6c23e;text-transform:uppercase;font-size:.7rem;font-weight:700;margin-bottom:.25rem;">
+                  Metric 4
+                </div>
+                <div><h5 style="color:#5a5c69;font-size:1.25rem;font-weight:700;margin-bottom:0;">123,456</h5></div>
+              </div>
+              <div class="col-auto">
+                <i class="fa fa-gears"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="column col-md-6">
+        <div class="card" style="border-left: .25rem solid #f6c23e;">
+          <div class="card-body">
+            <div class="row no-gutters align-items-center">
+              <div class="col">
+                <div style="color:#f6c23e;text-transform:uppercase;font-size:.7rem;font-weight:700;margin-bottom:.25rem;">
+                  Metric 5
+                </div>
+                <div><h5 style="color:#5a5c69;font-size:1.25rem;font-weight:700;margin-bottom:0;">123,456</h5></div>
+              </div>
+              <div class="col-auto">
+                <i class="fa fa-gears"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="column col-md-6">
+        <div class="card" style="border-left: .25rem solid #f6c23e;">
+          <div class="card-body">
+            <div class="row no-gutters align-items-center">
+              <div class="col">
+                <div style="color:#f6c23e;text-transform:uppercase;font-size:.7rem;font-weight:700;margin-bottom:.25rem;">
+                  Emitters
+                </div>
+                <div><h5 style="color:#5a5c69;font-size:1.25rem;font-weight:700;margin-bottom:0;">123,456</h5></div>
+              </div>
+              <div class="col-auto">
+                <i class="fa fa-gears"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card shadow">
+        <div class="card-header">
+          <h6 style="color:#4e73df;font-weight:700;margin:0;font-size:1rem;line-height: 1.2;">
+            Optimal Routes
+          </h6>
+        </div>
+        <div class="card-body">
+          <div class="chart">
+            <iframe src="map/visualization.html" name="optimal_routes" height="100%" width="100%" title="Optimal Routes"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
