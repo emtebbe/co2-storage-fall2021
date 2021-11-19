@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b53629c5b10e4340ad6325e7cb57997b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b53629c5b10e4340ad6325e7cb57997b" ></div>
+        
+</body>
+<script>    
+    
+            var map_b53629c5b10e4340ad6325e7cb57997b = L.map(
+                "map_b53629c5b10e4340ad6325e7cb57997b",
+                {
+                    center: [37.3427, -119.2244],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bfd253ca80a645379b1606dc1b0e21c7 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b53629c5b10e4340ad6325e7cb57997b);
+        
+    
+            var circle_marker_a028870651a14b189f0db11441c2e6b8 = L.circleMarker(
+                [38.4461, -121.4614],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_b53629c5b10e4340ad6325e7cb57997b);
+        
+    
+            circle_marker_a028870651a14b189f0db11441c2e6b8.bindTooltip(
+                `<div>
+                     Emitter: Carson Cogeneration
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e77e0784e3e840e7a242f35252715b4e = L.circleMarker(
+                [34.978345000000004, -120.641323],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b53629c5b10e4340ad6325e7cb57997b);
+        
+    
+            circle_marker_e77e0784e3e840e7a242f35252715b4e.bindTooltip(
+                `<div>
+                     Pool ID: 7920549.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ec3c6865d26046a9b88d9cf4fc7a612c = L.circleMarker(
+                [38.511, -121.4735],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_b53629c5b10e4340ad6325e7cb57997b);
+        
+    
+            circle_marker_ec3c6865d26046a9b88d9cf4fc7a612c.bindTooltip(
+                `<div>
+                     Emitter: Sacramento Power Authority Cogen
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_691ace2e6ca043be92df9cac746a0013 = L.circleMarker(
+                [38.11663267, -121.6778153],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b53629c5b10e4340ad6325e7cb57997b);
+        
+    
+            circle_marker_691ace2e6ca043be92df9cac746a0013.bindTooltip(
+                `<div>
+                     Pool ID: 6720436.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ba041e9cb8c74002b31411fd04381b2a = L.circleMarker(
+                [33.8581, -117.8616],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_b53629c5b10e4340ad6325e7cb57997b);
+        
+    
+            circle_marker_ba041e9cb8c74002b31411fd04381b2a.bindTooltip(
+                `<div>
+                     Emitter: Canyon Power Plant
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f110475d8a30492ebe99234439a99d6f = L.circleMarker(
+                [33.868332, -117.828602],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b53629c5b10e4340ad6325e7cb57997b);
+        
+    
+            circle_marker_f110475d8a30492ebe99234439a99d6f.bindTooltip(
+                `<div>
+                     Pool ID: 5906489.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_54f555b79a68471ab8f4542af076898d = L.circleMarker(
+                [38.088, -121.3871],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_b53629c5b10e4340ad6325e7cb57997b);
+        
+    
+            circle_marker_54f555b79a68471ab8f4542af076898d.bindTooltip(
+                `<div>
+                     Emitter: NPCA COMBUSTION TURBINE PROJECT #2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_96d0ed7a7e8d4a1d82d01aa2eff2b7e6 = L.circleMarker(
+                [34.31819916, -119.258667],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b53629c5b10e4340ad6325e7cb57997b);
+        
+    
+            circle_marker_96d0ed7a7e8d4a1d82d01aa2eff2b7e6.bindTooltip(
+                `<div>
+                     Pool ID: 11122353.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_575f8e666603437a8147435710ae7018 = L.circleMarker(
+                [34.187134, -119.148237],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b53629c5b10e4340ad6325e7cb57997b);
+        
+    
+            circle_marker_575f8e666603437a8147435710ae7018.bindTooltip(
+                `<div>
+                     Pool ID: 11122352.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6ba97c2cbfdd4ed6a95b358ff60c83bc = L.circleMarker(
+                [33.934167, -116.571388],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_b53629c5b10e4340ad6325e7cb57997b);
+        
+    
+            circle_marker_6ba97c2cbfdd4ed6a95b358ff60c83bc.bindTooltip(
+                `<div>
+                     Emitter: Sentinel Energy Center
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_23677fa4104a4f30bf493a13cb9b9615 = L.circleMarker(
+                [38.8341, -121.778167],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b53629c5b10e4340ad6325e7cb57997b);
+        
+    
+            circle_marker_23677fa4104a4f30bf493a13cb9b9615.bindTooltip(
+                `<div>
+                     Pool ID: 11320922.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ab7a4707d31e487b9a54def1ef1300a2 = L.circleMarker(
+                [34.1292, -119.1689],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_b53629c5b10e4340ad6325e7cb57997b);
+        
+    
+            circle_marker_ab7a4707d31e487b9a54def1ef1300a2.bindTooltip(
+                `<div>
+                     Emitter: Ormond Beach Power, LLC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9e9e6c6994904927a5874c8af40adac4 = L.circleMarker(
+                [34.38849825, -119.5963589],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b53629c5b10e4340ad6325e7cb57997b);
+        
+    
+            circle_marker_9e9e6c6994904927a5874c8af40adac4.bindTooltip(
+                `<div>
+                     Pool ID: 28320283.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2ed6b219b95744fa934366096d44b2d8 = L.circleMarker(
+                [33.359, -117.111],
+                {"bubblingMouseEvents": true, "color": "cadetblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cadetblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_b53629c5b10e4340ad6325e7cb57997b);
+        
+    
+            circle_marker_2ed6b219b95744fa934366096d44b2d8.bindTooltip(
+                `<div>
+                     Emitter: Orange Grove Project
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bc594f39dd564b97a25788aea5e69207 = L.circleMarker(
+                [33.880628, -117.850287],
+                {"bubblingMouseEvents": true, "color": "cadetblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cadetblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b53629c5b10e4340ad6325e7cb57997b);
+        
+    
+            circle_marker_bc594f39dd564b97a25788aea5e69207.bindTooltip(
+                `<div>
+                     Pool ID: 5906371.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_94038f87f6af4561b79c3a8b83afdc29 = L.circleMarker(
+                [33.874624, -117.836656],
+                {"bubblingMouseEvents": true, "color": "cadetblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cadetblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b53629c5b10e4340ad6325e7cb57997b);
+        
+    
+            circle_marker_94038f87f6af4561b79c3a8b83afdc29.bindTooltip(
+                `<div>
+                     Pool ID: 5906471.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_85eeeaac2dc84e5781e50dc9584c2288 = L.circleMarker(
+                [37.5739, -120.9854],
+                {"bubblingMouseEvents": true, "color": "darkpurple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkpurple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_b53629c5b10e4340ad6325e7cb57997b);
+        
+    
+            circle_marker_85eeeaac2dc84e5781e50dc9584c2288.bindTooltip(
+                `<div>
+                     Emitter: Almond Power Plant
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e8f8dbee83c64d0eb561740814a570b1 = L.circleMarker(
+                [33.86805474, -117.8281759],
+                {"bubblingMouseEvents": true, "color": "darkpurple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkpurple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b53629c5b10e4340ad6325e7cb57997b);
+        
+    
+            circle_marker_e8f8dbee83c64d0eb561740814a570b1.bindTooltip(
+                `<div>
+                     Pool ID: 5906307.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_93d3e7f2a23e4ce9a0ff2bb06161f018 = L.circleMarker(
+                [35.479054, -119.757836],
+                {"bubblingMouseEvents": true, "color": "darkpurple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkpurple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b53629c5b10e4340ad6325e7cb57997b);
+        
+    
+            circle_marker_93d3e7f2a23e4ce9a0ff2bb06161f018.bindTooltip(
+                `<div>
+                     Pool ID: 3030229.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b272f04d3d2e4bf5a213ba35dd559660 = L.circleMarker(
+                [35.481065, -119.75573],
+                {"bubblingMouseEvents": true, "color": "darkpurple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkpurple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b53629c5b10e4340ad6325e7cb57997b);
+        
+    
+            circle_marker_b272f04d3d2e4bf5a213ba35dd559660.bindTooltip(
+                `<div>
+                     Pool ID: 3020238.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_921f27024c3a4604801ade9e229b35af = L.circleMarker(
+                [35.450975, -119.719877],
+                {"bubblingMouseEvents": true, "color": "darkpurple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkpurple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b53629c5b10e4340ad6325e7cb57997b);
+        
+    
+            circle_marker_921f27024c3a4604801ade9e229b35af.bindTooltip(
+                `<div>
+                     Pool ID: 3022572.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a54887feac1d4e36ac21019fd3cee10f = L.circleMarker(
+                [34.46414, -118.765178],
+                {"bubblingMouseEvents": true, "color": "darkpurple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkpurple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b53629c5b10e4340ad6325e7cb57997b);
+        
+    
+            circle_marker_a54887feac1d4e36ac21019fd3cee10f.bindTooltip(
+                `<div>
+                     Pool ID: 11122034.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fc90feebfb164675b697399641b56c0b = L.circleMarker(
+                [35.683974, -119.784019],
+                {"bubblingMouseEvents": true, "color": "darkpurple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkpurple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b53629c5b10e4340ad6325e7cb57997b);
+        
+    
+            circle_marker_fc90feebfb164675b697399641b56c0b.bindTooltip(
+                `<div>
+                     Pool ID: 3033072.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cfb659a6d6ac4d618e972e808332c6f8 = L.circleMarker(
+                [33.8504, -118.395],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_b53629c5b10e4340ad6325e7cb57997b);
+        
+    
+            circle_marker_cfb659a6d6ac4d618e972e808332c6f8.bindTooltip(
+                `<div>
+                     Emitter: AES Redondo Beach
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c8052f62601d43aca9ed3a4cddf76e90 = L.circleMarker(
+                [35.452202, -119.716613],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b53629c5b10e4340ad6325e7cb57997b);
+        
+    
+            circle_marker_c8052f62601d43aca9ed3a4cddf76e90.bindTooltip(
+                `<div>
+                     Pool ID: 3058643.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_73c2f2ff3cf949aea3359e4bfd01ca50 = L.circleMarker(
+                [35.438758, -118.9952],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b53629c5b10e4340ad6325e7cb57997b);
+        
+    
+            circle_marker_73c2f2ff3cf949aea3359e4bfd01ca50.bindTooltip(
+                `<div>
+                     Pool ID: 3058482.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_49e5d4b750ae44b0959bb8bde3f580e1 = L.circleMarker(
+                [35.61139, -118.93682],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_b53629c5b10e4340ad6325e7cb57997b);
+        
+    
+            circle_marker_49e5d4b750ae44b0959bb8bde3f580e1.bindTooltip(
+                `<div>
+                     Emitter: LIVE OAK LIMITED
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1cf0e35cc64448e4956e4beb71a9ac42 = L.circleMarker(
+                [33.92783212, -117.8439774],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b53629c5b10e4340ad6325e7cb57997b);
+        
+    
+            circle_marker_1cf0e35cc64448e4956e4beb71a9ac42.bindTooltip(
+                `<div>
+                     Pool ID: 5907515.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2e02ddf04e62403aa153c5f1e1ce3aab = L.circleMarker(
+                [33.92922796, -117.8479468],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b53629c5b10e4340ad6325e7cb57997b);
+        
+    
+            circle_marker_2e02ddf04e62403aa153c5f1e1ce3aab.bindTooltip(
+                `<div>
+                     Pool ID: 5907509.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f12df3ae23fc4c5dadfbddac88fba2ff = L.circleMarker(
+                [35.44735, -119.08652],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_b53629c5b10e4340ad6325e7cb57997b);
+        
+    
+            circle_marker_f12df3ae23fc4c5dadfbddac88fba2ff.bindTooltip(
+                `<div>
+                     Emitter: MCKITTRICK LIMITED
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_974aaf2fa67442a78fa46321c159d6e4 = L.circleMarker(
+                [35.237904, -119.585176],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_b53629c5b10e4340ad6325e7cb57997b);
+        
+    
+            circle_marker_974aaf2fa67442a78fa46321c159d6e4.bindTooltip(
+                `<div>
+                     Pool ID: 3008688.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
