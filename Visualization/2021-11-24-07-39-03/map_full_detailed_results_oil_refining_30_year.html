@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_29ec7e74d2874957b97f4a54d630601c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_29ec7e74d2874957b97f4a54d630601c" ></div>
+        
+</body>
+<script>    
+    
+            var map_29ec7e74d2874957b97f4a54d630601c = L.map(
+                "map_29ec7e74d2874957b97f4a54d630601c",
+                {
+                    center: [37.3427, -119.2244],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3e763ad2f7914ebd9aef59faaec6d469 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            var circle_marker_7a536de4c5804ac29f0c5f9e3fbdfaed = L.circleMarker(
+                [35.295278, -118.921111],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            circle_marker_7a536de4c5804ac29f0c5f9e3fbdfaed.bindTooltip(
+                `<div>
+                     Emitter: KERN OIL & REFINING CO.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4f34bf2ef0e04c1ab69fc0e2fba144c9 = L.polyline(
+                [[35.295278, -118.921111], [35.004053119999995, -119.0754509]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            poly_line_4f34bf2ef0e04c1ab69fc0e2fba144c9.bindTooltip(
+                `<div>
+                     Emitter: KERN OIL & REFINING CO.<br>Pool ID: Pleito_Ranch_nan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e26f01577f944e0782e633218658b5c3 = L.circleMarker(
+                [35.004053119999995, -119.0754509],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            circle_marker_e26f01577f944e0782e633218658b5c3.bindTooltip(
+                `<div>
+                     Pool ID: Pleito_Ranch_nan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4fe46fb613804cb4aca3133807cdcd18 = L.circleMarker(
+                [35.39511, -119.04652],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            circle_marker_4fe46fb613804cb4aca3133807cdcd18.bindTooltip(
+                `<div>
+                     Emitter: SAN JOAQUIN REFINING CO INC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2226d07e0d12447a81ff2b9f357c0233 = L.polyline(
+                [[35.39511, -119.04652], [35.004053119999995, -119.0754509]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            poly_line_2226d07e0d12447a81ff2b9f357c0233.bindTooltip(
+                `<div>
+                     Emitter: SAN JOAQUIN REFINING CO INC<br>Pool ID: Pleito_Ranch_nan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_060c81dbabb74a2f9f73273858b2dbd2 = L.circleMarker(
+                [35.004053119999995, -119.0754509],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            circle_marker_060c81dbabb74a2f9f73273858b2dbd2.bindTooltip(
+                `<div>
+                     Pool ID: Pleito_Ranch_nan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7c3c452a1c56414baa7105e4ed370ec0 = L.polyline(
+                [[35.39511, -119.04652], [34.373233420000005, -118.78565945]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            poly_line_7c3c452a1c56414baa7105e4ed370ec0.bindTooltip(
+                `<div>
+                     Emitter: SAN JOAQUIN REFINING CO INC<br>Pool ID: Torrey Canyon_Any Area_Deep
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3c9608d0777f4af9bbf2bc48d98b3bbc = L.circleMarker(
+                [34.373233420000005, -118.78565945],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            circle_marker_3c9608d0777f4af9bbf2bc48d98b3bbc.bindTooltip(
+                `<div>
+                     Pool ID: Torrey Canyon_Any Area_Deep
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5a7f6d316da34f23b5daf2df9cbe57fd = L.circleMarker(
+                [37.938779, -122.396453],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            circle_marker_5a7f6d316da34f23b5daf2df9cbe57fd.bindTooltip(
+                `<div>
+                     Emitter: CHEVRON PRODS.CO. RICHMOND REFY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f3e8393d0d8c4029807199fa583df0a8 = L.polyline(
+                [[37.938779, -122.396453], [33.972731185, -117.9740042]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            poly_line_f3e8393d0d8c4029807199fa583df0a8.bindTooltip(
+                `<div>
+                     Emitter: CHEVRON PRODS.CO. RICHMOND REFY<br>Pool ID: Sansinena_New England (ABD)_pool
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ee2fa15dda3348b680fc0f2e964242b0 = L.circleMarker(
+                [33.972731185, -117.9740042],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            circle_marker_ee2fa15dda3348b680fc0f2e964242b0.bindTooltip(
+                `<div>
+                     Pool ID: Sansinena_New England (ABD)_pool
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_909536dd31384bedad238ec31e85f223 = L.polyline(
+                [[37.938779, -122.396453], [34.42740173, -119.0129057]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            poly_line_909536dd31384bedad238ec31e85f223.bindTooltip(
+                `<div>
+                     Emitter: CHEVRON PRODS.CO. RICHMOND REFY<br>Pool ID: Timber Canyon_Loel-Maxwell (ABD)_pool
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_23eabdeab2b644458b71fe7ac9f0580d = L.circleMarker(
+                [34.42740173, -119.0129057],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            circle_marker_23eabdeab2b644458b71fe7ac9f0580d.bindTooltip(
+                `<div>
+                     Pool ID: Timber Canyon_Loel-Maxwell (ABD)_pool
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e1250f7c16444b879894298e728a24c7 = L.polyline(
+                [[37.938779, -122.396453], [35.432619, -119.178872]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            poly_line_e1250f7c16444b879894298e728a24c7.bindTooltip(
+                `<div>
+                     Emitter: CHEVRON PRODS.CO. RICHMOND REFY<br>Pool ID: Seventh Standard_Any Area_Lower Stevens
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_960f5bd67c47456caf8f0d1ad2189e73 = L.circleMarker(
+                [35.432619, -119.178872],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            circle_marker_960f5bd67c47456caf8f0d1ad2189e73.bindTooltip(
+                `<div>
+                     Pool ID: Seventh Standard_Any Area_Lower Stevens
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_482664743c604fdea5c62d1f4dccb665 = L.circleMarker(
+                [33.7783, -118.2351],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            circle_marker_482664743c604fdea5c62d1f4dccb665.bindTooltip(
+                `<div>
+                     Emitter: ULTRAMAR INC WILMINGTON REFINERY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_de82f20a891c444eb6938bc114bd75f3 = L.polyline(
+                [[33.7783, -118.2351], [33.972731185, -117.9740042]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            poly_line_de82f20a891c444eb6938bc114bd75f3.bindTooltip(
+                `<div>
+                     Emitter: ULTRAMAR INC WILMINGTON REFINERY<br>Pool ID: Sansinena_New England (ABD)_pool
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_664bbbf4235148d0a786c9d6ccb35488 = L.circleMarker(
+                [33.972731185, -117.9740042],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            circle_marker_664bbbf4235148d0a786c9d6ccb35488.bindTooltip(
+                `<div>
+                     Pool ID: Sansinena_New England (ABD)_pool
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_262ed5ee40204f2c96685f1606e4b3d9 = L.circleMarker(
+                [33.946295, -118.16704],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            circle_marker_262ed5ee40204f2c96685f1606e4b3d9.bindTooltip(
+                `<div>
+                     Emitter: LUNDAY-THAGARD COMPANY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_3875886a86ae4f1e80da8c06d0d04757 = L.polyline(
+                [[33.946295, -118.16704], [33.972731185, -117.9740042]],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            poly_line_3875886a86ae4f1e80da8c06d0d04757.bindTooltip(
+                `<div>
+                     Emitter: LUNDAY-THAGARD COMPANY<br>Pool ID: Sansinena_New England (ABD)_pool
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0b1fdb05e2504fa890627f32c4fdb4fe = L.circleMarker(
+                [33.972731185, -117.9740042],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            circle_marker_0b1fdb05e2504fa890627f32c4fdb4fe.bindTooltip(
+                `<div>
+                     Pool ID: Sansinena_New England (ABD)_pool
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_3ed22b5b3d9b4aceb25344983025fa5e = L.polyline(
+                [[33.946295, -118.16704], [35.15135193, -119.5297012]],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            poly_line_3ed22b5b3d9b4aceb25344983025fa5e.bindTooltip(
+                `<div>
+                     Emitter: LUNDAY-THAGARD COMPANY<br>Pool ID: Midway-Sunset_Any Area_Alluvium
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a8e244b83f5047f7968188869a1e5c4b = L.circleMarker(
+                [35.15135193, -119.5297012],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            circle_marker_a8e244b83f5047f7968188869a1e5c4b.bindTooltip(
+                `<div>
+                     Pool ID: Midway-Sunset_Any Area_Alluvium
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d36250a528a94dc2b141fa325fce60dd = L.circleMarker(
+                [33.854967, -118.336907],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            circle_marker_d36250a528a94dc2b141fa325fce60dd.bindTooltip(
+                `<div>
+                     Emitter: TORRANCE REFINING COMPANY LLC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_3c01bb1ad26a45b68580cdaa07bd3e4d = L.polyline(
+                [[33.854967, -118.336907], [33.972731185, -117.9740042]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            poly_line_3c01bb1ad26a45b68580cdaa07bd3e4d.bindTooltip(
+                `<div>
+                     Emitter: TORRANCE REFINING COMPANY LLC<br>Pool ID: Sansinena_New England (ABD)_pool
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6507cd17092f442fb698d8e670875689 = L.circleMarker(
+                [33.972731185, -117.9740042],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            circle_marker_6507cd17092f442fb698d8e670875689.bindTooltip(
+                `<div>
+                     Pool ID: Sansinena_New England (ABD)_pool
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b3ab0d988fb94797816f72eecb131277 = L.polyline(
+                [[33.854967, -118.336907], [33.75267029, -118.1605072]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            poly_line_b3ab0d988fb94797816f72eecb131277.bindTooltip(
+                `<div>
+                     Emitter: TORRANCE REFINING COMPANY LLC<br>Pool ID: Wilmington_Fault Block VII_nan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fe40239210274174a1360fa9c3cb11ea = L.circleMarker(
+                [33.75267029, -118.1605072],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            circle_marker_fe40239210274174a1360fa9c3cb11ea.bindTooltip(
+                `<div>
+                     Pool ID: Wilmington_Fault Block VII_nan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7ceb02e834774b30838be50e4dcd9a3c = L.circleMarker(
+                [38.016594, -122.115392],
+                {"bubblingMouseEvents": true, "color": "cadetblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cadetblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            circle_marker_7ceb02e834774b30838be50e4dcd9a3c.bindTooltip(
+                `<div>
+                     Emitter: MARTINEZ REFINING COMPANY LLC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7e78010e5fac458d9837cae2bbf691cc = L.polyline(
+                [[38.016594, -122.115392], [34.849149, -120.4065935]],
+                {"bubblingMouseEvents": true, "color": "cadetblue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "cadetblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            poly_line_7e78010e5fac458d9837cae2bbf691cc.bindTooltip(
+                `<div>
+                     Emitter: MARTINEZ REFINING COMPANY LLC<br>Pool ID: Orcutt_Main_Monterey Deep
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_546ee2c3c2e4409eb3af197018b693c6 = L.circleMarker(
+                [34.849149, -120.4065935],
+                {"bubblingMouseEvents": true, "color": "cadetblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cadetblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            circle_marker_546ee2c3c2e4409eb3af197018b693c6.bindTooltip(
+                `<div>
+                     Pool ID: Orcutt_Main_Monterey Deep
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b91c71a4977b40cdbd4e7a154b71b871 = L.polyline(
+                [[38.016594, -122.115392], [34.074775700000004, -118.3783112]],
+                {"bubblingMouseEvents": true, "color": "cadetblue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "cadetblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            poly_line_b91c71a4977b40cdbd4e7a154b71b871.bindTooltip(
+                `<div>
+                     Emitter: MARTINEZ REFINING COMPANY LLC<br>Pool ID: Salt Lake_Any Area_nan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6bb7f2875d7a4daa881ad8b1cc3aca3e = L.circleMarker(
+                [34.074775700000004, -118.3783112],
+                {"bubblingMouseEvents": true, "color": "cadetblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cadetblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            circle_marker_6bb7f2875d7a4daa881ad8b1cc3aca3e.bindTooltip(
+                `<div>
+                     Pool ID: Salt Lake_Any Area_nan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4574fe20445945c99186875856bbecc0 = L.circleMarker(
+                [34.929609, -120.511998],
+                {"bubblingMouseEvents": true, "color": "darkpurple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkpurple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            circle_marker_4574fe20445945c99186875856bbecc0.bindTooltip(
+                `<div>
+                     Emitter: Greka Refining Company
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8fede10062b444f3bd0b249aea38de7f = L.polyline(
+                [[34.929609, -120.511998], [34.47358946, -118.6890578]],
+                {"bubblingMouseEvents": true, "color": "darkpurple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkpurple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            poly_line_8fede10062b444f3bd0b249aea38de7f.bindTooltip(
+                `<div>
+                     Emitter: Greka Refining Company<br>Pool ID: Oak Canyon_Any Area_6-AB, 7, and 8-AB
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_446ae812d7ab4f12b02272e7ffbc37fd = L.circleMarker(
+                [34.47358946, -118.6890578],
+                {"bubblingMouseEvents": true, "color": "darkpurple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkpurple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            circle_marker_446ae812d7ab4f12b02272e7ffbc37fd.bindTooltip(
+                `<div>
+                     Pool ID: Oak Canyon_Any Area_6-AB, 7, and 8-AB
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_93cedbbc593c4f8fb286e44cd6abab17 = L.polyline(
+                [[34.929609, -120.511998], [35.004053119999995, -119.0754509]],
+                {"bubblingMouseEvents": true, "color": "darkpurple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkpurple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            poly_line_93cedbbc593c4f8fb286e44cd6abab17.bindTooltip(
+                `<div>
+                     Emitter: Greka Refining Company<br>Pool ID: Pleito_Ranch_nan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2032d430aa5244218b3ebfe1554395f9 = L.circleMarker(
+                [35.004053119999995, -119.0754509],
+                {"bubblingMouseEvents": true, "color": "darkpurple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkpurple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            circle_marker_2032d430aa5244218b3ebfe1554395f9.bindTooltip(
+                `<div>
+                     Pool ID: Pleito_Ranch_nan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_872656a187c5421882ced51e22aba23c = L.polyline(
+                [[34.929609, -120.511998], [33.866685655, -118.24399085]],
+                {"bubblingMouseEvents": true, "color": "darkpurple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkpurple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            poly_line_872656a187c5421882ced51e22aba23c.bindTooltip(
+                `<div>
+                     Emitter: Greka Refining Company<br>Pool ID: Dominguez_pool
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_35e5d3be74f84f5eb8fe5cc11ab0c04e = L.circleMarker(
+                [33.866685655, -118.24399085],
+                {"bubblingMouseEvents": true, "color": "darkpurple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkpurple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            circle_marker_35e5d3be74f84f5eb8fe5cc11ab0c04e.bindTooltip(
+                `<div>
+                     Pool ID: Dominguez_pool
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a465569425324f0081813c01f8cad20e = L.circleMarker(
+                [35.4185, -119.0112],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            circle_marker_a465569425324f0081813c01f8cad20e.bindTooltip(
+                `<div>
+                     Emitter: TRICOR REFINING LLC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1755c40ffd6a4c7bbfcff935ed7d0d0e = L.polyline(
+                [[35.4185, -119.0112], [34.8511, -120.5087805]],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "white", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            poly_line_1755c40ffd6a4c7bbfcff935ed7d0d0e.bindTooltip(
+                `<div>
+                     Emitter: TRICOR REFINING LLC<br>Pool ID: Casmalia_pool
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_43ac135c23514e86b09500f3f1651e40 = L.circleMarker(
+                [34.8511, -120.5087805],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            circle_marker_43ac135c23514e86b09500f3f1651e40.bindTooltip(
+                `<div>
+                     Pool ID: Casmalia_pool
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_d1e240a023d54a908b0c646b00b552fc = L.polyline(
+                [[35.4185, -119.0112], [35.401397, -119.73568600000002]],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "white", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            poly_line_d1e240a023d54a908b0c646b00b552fc.bindTooltip(
+                `<div>
+                     Emitter: TRICOR REFINING LLC<br>Pool ID: Cymric_Sheep Springs_Carneros
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_24e6b02ff9bd41c8b400b266c0ca7353 = L.circleMarker(
+                [35.401397, -119.73568600000002],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            circle_marker_24e6b02ff9bd41c8b400b266c0ca7353.bindTooltip(
+                `<div>
+                     Pool ID: Cymric_Sheep Springs_Carneros
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8d54d0d0e1af45559de7ac62fb927878 = L.polyline(
+                [[35.4185, -119.0112], [34.9051018, -119.7162074]],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "white", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            poly_line_8d54d0d0e1af45559de7ac62fb927878.bindTooltip(
+                `<div>
+                     Emitter: TRICOR REFINING LLC<br>Pool ID: Cuyama, South_Main_No Pool Breakdown
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_941b689c6ba44ceeb34f7338c780b48c = L.circleMarker(
+                [34.9051018, -119.7162074],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            circle_marker_941b689c6ba44ceeb34f7338c780b48c.bindTooltip(
+                `<div>
+                     Pool ID: Cuyama, South_Main_No Pool Breakdown
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1d85ab8ce79647c4b71ed339c0e05cd0 = L.polyline(
+                [[35.4185, -119.0112], [33.76561445, -118.22089485]],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "white", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            poly_line_1d85ab8ce79647c4b71ed339c0e05cd0.bindTooltip(
+                `<div>
+                     Emitter: TRICOR REFINING LLC<br>Pool ID: Old Wilmington (ABD)_Fault Block IV Onshore_pool
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1f214354c0c14bea896eca761c64e515 = L.circleMarker(
+                [33.76561445, -118.22089485],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_29ec7e74d2874957b97f4a54d630601c);
+        
+    
+            circle_marker_1f214354c0c14bea896eca761c64e515.bindTooltip(
+                `<div>
+                     Pool ID: Old Wilmington (ABD)_Fault Block IV Onshore_pool
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
