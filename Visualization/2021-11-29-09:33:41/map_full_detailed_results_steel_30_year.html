@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7c266b27288341ddb627fdb9e4223d58 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-dvf/0.3.0/leaflet-dvf.markers.min.js"></script>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_7c266b27288341ddb627fdb9e4223d58" ></div>
+        
+</body>
+<script>    
+    
+            var map_7c266b27288341ddb627fdb9e4223d58 = L.map(
+                "map_7c266b27288341ddb627fdb9e4223d58",
+                {
+                    center: [36.3302, -119.2921],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_783a14c58d76481e9bccafdb7a1f3d83 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_7c266b27288341ddb627fdb9e4223d58);
+        
+    
+            var circle_marker_69cc8e7212c84e368bb9cd113d226136 = L.circleMarker(
+                [34.09787, -117.529362],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_7c266b27288341ddb627fdb9e4223d58);
+        
+    
+            circle_marker_69cc8e7212c84e368bb9cd113d226136.bindTooltip(
+                `<div>
+                     Emitter: TAMCO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_41c84a0b4a204b5db54caf68c1ea97f9 = L.polyline(
+                [[34.09787, -117.529362], [38.504217, -121.7176689]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_7c266b27288341ddb627fdb9e4223d58);
+        
+    
+            poly_line_41c84a0b4a204b5db54caf68c1ea97f9.bindTooltip(
+                `<div>
+                     Emitter: TAMCO<br>Pool ID: Davis Southeast Gas_pool
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_77156922979b4c948b604ccc2f1300bd = new L.RegularPolygonMarker(
+                [38.504217, -121.7176689],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 231.16557179522533, "stroke": true, "weight": 3}
+            ).addTo(map_7c266b27288341ddb627fdb9e4223d58);
+        
+    
+            regular_polygon_marker_77156922979b4c948b604ccc2f1300bd.bindTooltip(
+                `<div>
+                     Pool ID: Davis Southeast Gas_pool
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_23b2e5bfc27541a2beabeb8f6d467b93 = L.polyline(
+                [[34.09787, -117.529362], [35.335888, -119.2345575]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_7c266b27288341ddb627fdb9e4223d58);
+        
+    
+            poly_line_23b2e5bfc27541a2beabeb8f6d467b93.bindTooltip(
+                `<div>
+                     Emitter: TAMCO<br>Pool ID: Strand_Main_Lower Stevens
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_063ff9eaff624210b865e031a8e1f137 = new L.RegularPolygonMarker(
+                [35.335888, -119.2345575],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 220.83581136710325, "stroke": true, "weight": 3}
+            ).addTo(map_7c266b27288341ddb627fdb9e4223d58);
+        
+    
+            regular_polygon_marker_063ff9eaff624210b865e031a8e1f137.bindTooltip(
+                `<div>
+                     Pool ID: Strand_Main_Lower Stevens
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_998372aab8e148a8bea9e004d9d0d708 = L.polyline(
+                [[34.09787, -117.529362], [34.76799393, -120.5040436]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_7c266b27288341ddb627fdb9e4223d58);
+        
+    
+            poly_line_998372aab8e148a8bea9e004d9d0d708.bindTooltip(
+                `<div>
+                     Emitter: TAMCO<br>Pool ID: Lompoc_Any Area_nan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_37c06d23665f442c98f864287c3a0feb = new L.RegularPolygonMarker(
+                [34.76799393, -120.5040436],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 194.365700622931, "stroke": true, "weight": 3}
+            ).addTo(map_7c266b27288341ddb627fdb9e4223d58);
+        
+    
+            regular_polygon_marker_37c06d23665f442c98f864287c3a0feb.bindTooltip(
+                `<div>
+                     Pool ID: Lompoc_Any Area_nan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_970b93dd6855418892cfbe76a2893e54 = L.polyline(
+                [[34.09787, -117.529362], [35.349667, -119.226615]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_7c266b27288341ddb627fdb9e4223d58);
+        
+    
+            poly_line_970b93dd6855418892cfbe76a2893e54.bindTooltip(
+                `<div>
+                     Emitter: TAMCO<br>Pool ID: Strand_Main_Upper Stevens
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_71a8b1cf636745c190ddb923cbb01db1 = new L.RegularPolygonMarker(
+                [35.349667, -119.226615],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 221.28794605848313, "stroke": true, "weight": 3}
+            ).addTo(map_7c266b27288341ddb627fdb9e4223d58);
+        
+    
+            regular_polygon_marker_71a8b1cf636745c190ddb923cbb01db1.bindTooltip(
+                `<div>
+                     Pool ID: Strand_Main_Upper Stevens
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a8a32d8c7ea1480684e599f2abeff173 = L.polyline(
+                [[34.09787, -117.529362], [35.2685275, -118.8766175]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_7c266b27288341ddb627fdb9e4223d58);
+        
+    
+            poly_line_a8a32d8c7ea1480684e599f2abeff173.bindTooltip(
+                `<div>
+                     Emitter: TAMCO<br>Pool ID: Mountain View_Main_Kern River-Chanac
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_3b49d923329a4e8cb969f1a51bbfd33e = new L.RegularPolygonMarker(
+                [35.2685275, -118.8766175],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 226.06340259285474, "stroke": true, "weight": 3}
+            ).addTo(map_7c266b27288341ddb627fdb9e4223d58);
+        
+    
+            regular_polygon_marker_3b49d923329a4e8cb969f1a51bbfd33e.bindTooltip(
+                `<div>
+                     Pool ID: Mountain View_Main_Kern River-Chanac
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_fedf50d1ece44c99bdaca70a4c9d3e37 = L.polyline(
+                [[34.09787, -117.529362], [38.255776, -122.559415]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_7c266b27288341ddb627fdb9e4223d58);
+        
+    
+            poly_line_fedf50d1ece44c99bdaca70a4c9d3e37.bindTooltip(
+                `<div>
+                     Emitter: TAMCO<br>Pool ID: Petaluma (ABD)_Any Area_Gas Zone
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_09a52a0b3d5141f7ae128e98a180f1ed = new L.RegularPolygonMarker(
+                [38.255776, -122.559415],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 224.04456701007072, "stroke": true, "weight": 3}
+            ).addTo(map_7c266b27288341ddb627fdb9e4223d58);
+        
+    
+            regular_polygon_marker_09a52a0b3d5141f7ae128e98a180f1ed.bindTooltip(
+                `<div>
+                     Pool ID: Petaluma (ABD)_Any Area_Gas Zone
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7ccc3624803c4854bebd14bc63b89db9 = L.polyline(
+                [[34.09787, -117.529362], [35.158015, -119.11791]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_7c266b27288341ddb627fdb9e4223d58);
+        
+    
+            poly_line_7ccc3624803c4854bebd14bc63b89db9.bindTooltip(
+                `<div>
+                     Emitter: TAMCO<br>Pool ID: Paloma_Symons_Paloma
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_07ac04e2fe654dbdb47d6ace4010aa04 = new L.RegularPolygonMarker(
+                [35.158015, -119.11791],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 218.4621150889752, "stroke": true, "weight": 3}
+            ).addTo(map_7c266b27288341ddb627fdb9e4223d58);
+        
+    
+            regular_polygon_marker_07ac04e2fe654dbdb47d6ace4010aa04.bindTooltip(
+                `<div>
+                     Pool ID: Paloma_Symons_Paloma
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_809445479a1542d2be859a454e8ba3ec = L.polyline(
+                [[34.09787, -117.529362], [34.325351500000004, -119.3548094]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_7c266b27288341ddb627fdb9e4223d58);
+        
+    
+            poly_line_809445479a1542d2be859a454e8ba3ec.bindTooltip(
+                `<div>
+                     Emitter: TAMCO<br>Pool ID: Rincon_Onshore_Wood/1-3 Rincon
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_e6ff9fe142c541baa5629cfdcc89c1e8 = new L.RegularPolygonMarker(
+                [34.325351500000004, -119.3548094],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 188.01684517530498, "stroke": true, "weight": 3}
+            ).addTo(map_7c266b27288341ddb627fdb9e4223d58);
+        
+    
+            regular_polygon_marker_e6ff9fe142c541baa5629cfdcc89c1e8.bindTooltip(
+                `<div>
+                     Pool ID: Rincon_Onshore_Wood/1-3 Rincon
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8907d27d42b24bb19f527a649cce8b1c = L.polyline(
+                [[34.09787, -117.529362], [33.73932, -118.1391355]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_7c266b27288341ddb627fdb9e4223d58);
+        
+    
+            poly_line_8907d27d42b24bb19f527a649cce8b1c.bindTooltip(
+                `<div>
+                     Emitter: TAMCO<br>Pool ID: Wilmington_Fault Block 90_Union Pacific
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_4dccfc5fb98646f7b8cddbd6e1873167 = new L.RegularPolygonMarker(
+                [33.73932, -118.1391355],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 144.63443519210762, "stroke": true, "weight": 3}
+            ).addTo(map_7c266b27288341ddb627fdb9e4223d58);
+        
+    
+            regular_polygon_marker_4dccfc5fb98646f7b8cddbd6e1873167.bindTooltip(
+                `<div>
+                     Pool ID: Wilmington_Fault Block 90_Union Pacific
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e47cdf461c714befb122b64918a7c8fd = L.polyline(
+                [[34.09787, -117.529362], [33.738941, -118.139064]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_7c266b27288341ddb627fdb9e4223d58);
+        
+    
+            poly_line_e47cdf461c714befb122b64918a7c8fd.bindTooltip(
+                `<div>
+                     Emitter: TAMCO<br>Pool ID: Wilmington_Fault Block 90_Pliocene Sand
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_ff9f6021d50942ed966675dbcba4821e = new L.RegularPolygonMarker(
+                [33.738941, -118.139064],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 144.60283530954476, "stroke": true, "weight": 3}
+            ).addTo(map_7c266b27288341ddb627fdb9e4223d58);
+        
+    
+            regular_polygon_marker_ff9f6021d50942ed966675dbcba4821e.bindTooltip(
+                `<div>
+                     Pool ID: Wilmington_Fault Block 90_Pliocene Sand
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a842c1677a01445e86e96e6978bd431b = L.polyline(
+                [[34.09787, -117.529362], [34.871043, -120.365827]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_7c266b27288341ddb627fdb9e4223d58);
+        
+    
+            poly_line_a842c1677a01445e86e96e6978bd431b.bindTooltip(
+                `<div>
+                     Emitter: TAMCO<br>Pool ID: Santa Maria Valley_Clark_Clark
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_705af06d7d3242a0bfa07f834db1de13 = new L.RegularPolygonMarker(
+                [34.871043, -120.365827],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 197.41406567044538, "stroke": true, "weight": 3}
+            ).addTo(map_7c266b27288341ddb627fdb9e4223d58);
+        
+    
+            regular_polygon_marker_705af06d7d3242a0bfa07f834db1de13.bindTooltip(
+                `<div>
+                     Pool ID: Santa Maria Valley_Clark_Clark
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_20588189f3bf4ad09a3991b6b3ee886e = L.polyline(
+                [[34.09787, -117.529362], [34.315962490000004, -118.50929134999998]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_7c266b27288341ddb627fdb9e4223d58);
+        
+    
+            poly_line_20588189f3bf4ad09a3991b6b3ee886e.bindTooltip(
+                `<div>
+                     Emitter: TAMCO<br>Pool ID: Cascade_Any Area_Deep
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_0b5563dd19ba4b1eafe5bb1eb08ac705 = new L.RegularPolygonMarker(
+                [34.315962490000004, -118.50929134999998],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 194.72036201288904, "stroke": true, "weight": 3}
+            ).addTo(map_7c266b27288341ddb627fdb9e4223d58);
+        
+    
+            regular_polygon_marker_0b5563dd19ba4b1eafe5bb1eb08ac705.bindTooltip(
+                `<div>
+                     Pool ID: Cascade_Any Area_Deep
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c1a8909bcae145afbefff863ac371011 = L.polyline(
+                [[34.09787, -117.529362], [37.745734875, -121.26467265]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_7c266b27288341ddb627fdb9e4223d58);
+        
+    
+            poly_line_c1a8909bcae145afbefff863ac371011.bindTooltip(
+                `<div>
+                     Emitter: TAMCO<br>Pool ID: McMullin Ranch Gas_Any Area_E Zone
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_ce75d4205035421cac87b71747e2b740 = new L.RegularPolygonMarker(
+                [37.745734875, -121.26467265],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 229.09806076068492, "stroke": true, "weight": 3}
+            ).addTo(map_7c266b27288341ddb627fdb9e4223d58);
+        
+    
+            regular_polygon_marker_ce75d4205035421cac87b71747e2b740.bindTooltip(
+                `<div>
+                     Pool ID: McMullin Ranch Gas_Any Area_E Zone
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_47409f403ef04f37b32ab8288c9d9ef5 = L.polyline(
+                [[34.09787, -117.529362], [34.31311595, -118.5559275]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_7c266b27288341ddb627fdb9e4223d58);
+        
+    
+            poly_line_47409f403ef04f37b32ab8288c9d9ef5.bindTooltip(
+                `<div>
+                     Emitter: TAMCO<br>Pool ID: Aliso Canyon_Any Area_Sesnon-Frew
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_31f6d105290243f38926eda62bcc2ca1 = new L.RegularPolygonMarker(
+                [34.31311595, -118.5559275],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 193.8748524681284, "stroke": true, "weight": 3}
+            ).addTo(map_7c266b27288341ddb627fdb9e4223d58);
+        
+    
+            regular_polygon_marker_31f6d105290243f38926eda62bcc2ca1.bindTooltip(
+                `<div>
+                     Pool ID: Aliso Canyon_Any Area_Sesnon-Frew
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7f1f662fdaa1454aa2205fe3c2c5362f = L.polyline(
+                [[34.09787, -117.529362], [34.42225913, -118.608987]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_7c266b27288341ddb627fdb9e4223d58);
+        
+    
+            poly_line_7f1f662fdaa1454aa2205fe3c2c5362f.bindTooltip(
+                `<div>
+                     Emitter: TAMCO<br>Pool ID: Castaic Junction (ABD)_Any Area_10-B
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_0de767e9d8e14cfa823e3fe075a8888c = new L.RegularPolygonMarker(
+                [34.42225913, -118.608987],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 199.58954348077654, "stroke": true, "weight": 3}
+            ).addTo(map_7c266b27288341ddb627fdb9e4223d58);
+        
+    
+            regular_polygon_marker_0de767e9d8e14cfa823e3fe075a8888c.bindTooltip(
+                `<div>
+                     Pool ID: Castaic Junction (ABD)_Any Area_10-B
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_dfe1852e876842ab967fac74edc07f63 = L.polyline(
+                [[34.09787, -117.529362], [33.74560928, -118.2051468]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_7c266b27288341ddb627fdb9e4223d58);
+        
+    
+            poly_line_dfe1852e876842ab967fac74edc07f63.bindTooltip(
+                `<div>
+                     Emitter: TAMCO<br>Pool ID: Wilmington_Fault Block V_nan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_622e4c22e36e472fa6cfd765db8babd4 = new L.RegularPolygonMarker(
+                [33.74560928, -118.2051468],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 147.79504455705853, "stroke": true, "weight": 3}
+            ).addTo(map_7c266b27288341ddb627fdb9e4223d58);
+        
+    
+            regular_polygon_marker_622e4c22e36e472fa6cfd765db8babd4.bindTooltip(
+                `<div>
+                     Pool ID: Wilmington_Fault Block V_nan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_bf117e367ce54f2198a2413ff55795af = L.polyline(
+                [[34.09787, -117.529362], [34.316166665, -118.50875475]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_7c266b27288341ddb627fdb9e4223d58);
+        
+    
+            poly_line_bf117e367ce54f2198a2413ff55795af.bindTooltip(
+                `<div>
+                     Emitter: TAMCO<br>Pool ID: Cascade_Any Area_No Pool Breakdown
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_e8f58913b62248b98f2a73e21397dd78 = new L.RegularPolygonMarker(
+                [34.316166665, -118.50875475],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 194.7417877029884, "stroke": true, "weight": 3}
+            ).addTo(map_7c266b27288341ddb627fdb9e4223d58);
+        
+    
+            regular_polygon_marker_e8f58913b62248b98f2a73e21397dd78.bindTooltip(
+                `<div>
+                     Pool ID: Cascade_Any Area_No Pool Breakdown
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_d4e379426c2a459ab7f62fa6d3ab9a4a = L.polyline(
+                [[34.09787, -117.529362], [35.449069, -119.109146]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_7c266b27288341ddb627fdb9e4223d58);
+        
+    
+            poly_line_d4e379426c2a459ab7f62fa6d3ab9a4a.bindTooltip(
+                `<div>
+                     Emitter: TAMCO<br>Pool ID: Rosedale Ranch_Northeast_Lerdo-Chanac
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_d5e187e2061a454383e37640916f2537 = new L.RegularPolygonMarker(
+                [35.449069, -119.109146],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 225.5751102378502, "stroke": true, "weight": 3}
+            ).addTo(map_7c266b27288341ddb627fdb9e4223d58);
+        
+    
+            regular_polygon_marker_d5e187e2061a454383e37640916f2537.bindTooltip(
+                `<div>
+                     Pool ID: Rosedale Ranch_Northeast_Lerdo-Chanac
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_76fa29060f764c62a61b896d80e8d41f = L.polyline(
+                [[34.09787, -117.529362], [35.904446255, -119.96005725]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_7c266b27288341ddb627fdb9e4223d58);
+        
+    
+            poly_line_76fa29060f764c62a61b896d80e8d41f.bindTooltip(
+                `<div>
+                     Emitter: TAMCO<br>Pool ID: Kettleman Middle Dome_Any Area_Kreyenhagen
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_6ac655da9ae04f4382c7859335abe71e = new L.RegularPolygonMarker(
+                [35.904446255, -119.96005725],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 221.38721712079294, "stroke": true, "weight": 3}
+            ).addTo(map_7c266b27288341ddb627fdb9e4223d58);
+        
+    
+            regular_polygon_marker_6ac655da9ae04f4382c7859335abe71e.bindTooltip(
+                `<div>
+                     Pool ID: Kettleman Middle Dome_Any Area_Kreyenhagen
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1485022438214bf1bd085c1157001d4b = L.polyline(
+                [[34.09787, -117.529362], [33.74154250000001, -118.161801]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_7c266b27288341ddb627fdb9e4223d58);
+        
+    
+            poly_line_1485022438214bf1bd085c1157001d4b.bindTooltip(
+                `<div>
+                     Emitter: TAMCO<br>Pool ID: Wilmington_Fault Block 90_Terminal
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_a59f28423f974ab8beacbb11de6a86e4 = new L.RegularPolygonMarker(
+                [33.74154250000001, -118.161801],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 145.77194670746331, "stroke": true, "weight": 3}
+            ).addTo(map_7c266b27288341ddb627fdb9e4223d58);
+        
+    
+            regular_polygon_marker_a59f28423f974ab8beacbb11de6a86e4.bindTooltip(
+                `<div>
+                     Pool ID: Wilmington_Fault Block 90_Terminal
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
