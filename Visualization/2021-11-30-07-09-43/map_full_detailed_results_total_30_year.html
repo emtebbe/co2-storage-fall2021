@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_af3d772ed6c643d4b40630b46f80f19e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-dvf/0.3.0/leaflet-dvf.markers.min.js"></script>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_af3d772ed6c643d4b40630b46f80f19e" ></div>
+        
+</body>
+<script>    
+    
+            var map_af3d772ed6c643d4b40630b46f80f19e = L.map(
+                "map_af3d772ed6c643d4b40630b46f80f19e",
+                {
+                    center: [36.3302, -119.2921],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c3f426ab33ff46c1b8d990f245822140 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_af3d772ed6c643d4b40630b46f80f19e);
+        
+    
+            var circle_marker_09abaa6736b74c75859cc2be01d19f1d = L.circleMarker(
+                [34.6222, -117.1001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_af3d772ed6c643d4b40630b46f80f19e);
+        
+    
+            circle_marker_09abaa6736b74c75859cc2be01d19f1d.bindTooltip(
+                `<div>
+                     Emitter: CEMEX Construction Materials Pacific LLC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_353b30f50d874abd9b7a9e8c3f05a04a = L.polyline(
+                [[34.6222, -117.1001], [33.752140000000004, -118.160022]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_af3d772ed6c643d4b40630b46f80f19e);
+        
+    
+            poly_line_353b30f50d874abd9b7a9e8c3f05a04a.bindTooltip(
+                `<div>
+                     Emitter: CEMEX Construction Materials Pacific LLC<br>Pool ID: Wilmington:Fault Block 90:Ford
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_c64da02608374d58bf01461f84aa8edb = new L.RegularPolygonMarker(
+                [33.752140000000004, -118.160022],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 135.05531681852932, "stroke": true, "weight": 3}
+            ).addTo(map_af3d772ed6c643d4b40630b46f80f19e);
+        
+    
+            regular_polygon_marker_c64da02608374d58bf01461f84aa8edb.bindTooltip(
+                `<div>
+                     Pool ID: Wilmington:Fault Block 90:Ford
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_17923f7d035847bdbf3a41c7cfa01266 = L.polyline(
+                [[34.6222, -117.1001], [35.4026185, -119.163296]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_af3d772ed6c643d4b40630b46f80f19e);
+        
+    
+            poly_line_17923f7d035847bdbf3a41c7cfa01266.bindTooltip(
+                `<div>
+                     Emitter: CEMEX Construction Materials Pacific LLC<br>Pool ID: Rosedale:Main:Stevens
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_403b818af1584780ab6b0dcd702c74c6 = new L.RegularPolygonMarker(
+                [35.4026185, -119.163296],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 204.0965329130408, "stroke": true, "weight": 3}
+            ).addTo(map_af3d772ed6c643d4b40630b46f80f19e);
+        
+    
+            regular_polygon_marker_403b818af1584780ab6b0dcd702c74c6.bindTooltip(
+                `<div>
+                     Pool ID: Rosedale:Main:Stevens
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e4fde606e538475c976b55f810ece0a9 = L.polyline(
+                [[34.6222, -117.1001], [35.39691, -119.743953]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_af3d772ed6c643d4b40630b46f80f19e);
+        
+    
+            poly_line_e4fde606e538475c976b55f810ece0a9.bindTooltip(
+                `<div>
+                     Emitter: CEMEX Construction Materials Pacific LLC<br>Pool ID: Cymric:Salt Creek Main:Carneros Unit
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_0c9703bd3e6942148bf1f959c3bbfc68 = new L.RegularPolygonMarker(
+                [35.39691, -119.743953],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 198.8413186815114, "stroke": true, "weight": 3}
+            ).addTo(map_af3d772ed6c643d4b40630b46f80f19e);
+        
+    
+            regular_polygon_marker_0c9703bd3e6942148bf1f959c3bbfc68.bindTooltip(
+                `<div>
+                     Pool ID: Cymric:Salt Creek Main:Carneros Unit
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0d01674ad91948bb8c534b0f2fe56e63 = L.polyline(
+                [[34.6222, -117.1001], [34.425236015, -118.62688855]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_af3d772ed6c643d4b40630b46f80f19e);
+        
+    
+            poly_line_0d01674ad91948bb8c534b0f2fe56e63.bindTooltip(
+                `<div>
+                     Emitter: CEMEX Construction Materials Pacific LLC<br>Pool ID: Castaic Junction (ABD)::21 Del Valle
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_567f8897dc8c486198ca858421330692 = new L.RegularPolygonMarker(
+                [34.425236015, -118.62688855],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 170.7085873971458, "stroke": true, "weight": 3}
+            ).addTo(map_af3d772ed6c643d4b40630b46f80f19e);
+        
+    
+            regular_polygon_marker_567f8897dc8c486198ca858421330692.bindTooltip(
+                `<div>
+                     Pool ID: Castaic Junction (ABD)::21 Del Valle
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1a91b2e950e64ea58dbd2090aca18cb5 = L.polyline(
+                [[34.6222, -117.1001], [35.5544545, -119.8135]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_af3d772ed6c643d4b40630b46f80f19e);
+        
+    
+            poly_line_1a91b2e950e64ea58dbd2090aca18cb5.bindTooltip(
+                `<div>
+                     Emitter: CEMEX Construction Materials Pacific LLC<br>Pool ID: Belridge, North::R Sand
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_c95eb89588fd442996fb470212eb12cd = new L.RegularPolygonMarker(
+                [35.5544545, -119.8135],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 201.9006026010111, "stroke": true, "weight": 3}
+            ).addTo(map_af3d772ed6c643d4b40630b46f80f19e);
+        
+    
+            regular_polygon_marker_c95eb89588fd442996fb470212eb12cd.bindTooltip(
+                `<div>
+                     Pool ID: Belridge, North::R Sand
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1c52148c4a884dd0b96d0b547c5ab985 = L.polyline(
+                [[34.6222, -117.1001], [35.181105, -119.162911]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_af3d772ed6c643d4b40630b46f80f19e);
+        
+    
+            poly_line_1c52148c4a884dd0b96d0b547c5ab985.bindTooltip(
+                `<div>
+                     Emitter: CEMEX Construction Materials Pacific LLC<br>Pool ID: Paloma:Main:Paloma
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_8c3de43d6d804818b1557b1316890247 = new L.RegularPolygonMarker(
+                [35.181105, -119.162911],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 197.61256343119263, "stroke": true, "weight": 3}
+            ).addTo(map_af3d772ed6c643d4b40630b46f80f19e);
+        
+    
+            regular_polygon_marker_8c3de43d6d804818b1557b1316890247.bindTooltip(
+                `<div>
+                     Pool ID: Paloma:Main:Paloma
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c4dc7ad188404e1ead06e0cef26e121f = L.polyline(
+                [[34.6222, -117.1001], [35.398920000000004, -119.151102]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_af3d772ed6c643d4b40630b46f80f19e);
+        
+    
+            poly_line_c4dc7ad188404e1ead06e0cef26e121f.bindTooltip(
+                `<div>
+                     Emitter: CEMEX Construction Materials Pacific LLC<br>Pool ID: Rosedale:East (ABD):Stevens
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_6ff771003148462ea75e7e5d5362ffc6 = new L.RegularPolygonMarker(
+                [35.398920000000004, -119.151102],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 204.12520316949485, "stroke": true, "weight": 3}
+            ).addTo(map_af3d772ed6c643d4b40630b46f80f19e);
+        
+    
+            regular_polygon_marker_6ff771003148462ea75e7e5d5362ffc6.bindTooltip(
+                `<div>
+                     Pool ID: Rosedale:East (ABD):Stevens
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b0d1b2aa0423470c823ebc6a8a673141 = L.polyline(
+                [[34.6222, -117.1001], [36.04415473, -120.97290365]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_af3d772ed6c643d4b40630b46f80f19e);
+        
+    
+            poly_line_b0d1b2aa0423470c823ebc6a8a673141.bindTooltip(
+                `<div>
+                     Emitter: CEMEX Construction Materials Pacific LLC<br>Pool ID: Paris Valley:Main:Ansberry
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_2af4d9243bae45d6b33f476369ef764f = new L.RegularPolygonMarker(
+                [36.04415473, -120.97290365],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 203.00606286489256, "stroke": true, "weight": 3}
+            ).addTo(map_af3d772ed6c643d4b40630b46f80f19e);
+        
+    
+            regular_polygon_marker_2af4d9243bae45d6b33f476369ef764f.bindTooltip(
+                `<div>
+                     Pool ID: Paris Valley:Main:Ansberry
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_5c5d9adffee94d4ebc26db37c659e78c = L.polyline(
+                [[34.6222, -117.1001], [35.486937, -118.888528]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_af3d772ed6c643d4b40630b46f80f19e);
+        
+    
+            poly_line_5c5d9adffee94d4ebc26db37c659e78c.bindTooltip(
+                `<div>
+                     Emitter: CEMEX Construction Materials Pacific LLC<br>Pool ID: Round Mountain:Main:Jewett-Vedder
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_4771386d85a6431cb265f5bed8784f5a = new L.RegularPolygonMarker(
+                [35.486937, -118.888528],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 209.9398316534072, "stroke": true, "weight": 3}
+            ).addTo(map_af3d772ed6c643d4b40630b46f80f19e);
+        
+    
+            regular_polygon_marker_4771386d85a6431cb265f5bed8784f5a.bindTooltip(
+                `<div>
+                     Pool ID: Round Mountain:Main:Jewett-Vedder
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_39f92d617a664419ae767714bd3d9a3c = L.polyline(
+                [[34.6222, -117.1001], [35.401968, -119.738205]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_af3d772ed6c643d4b40630b46f80f19e);
+        
+    
+            poly_line_39f92d617a664419ae767714bd3d9a3c.bindTooltip(
+                `<div>
+                     Emitter: CEMEX Construction Materials Pacific LLC<br>Pool ID: Cymric:Sheep Springs:Monterey
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_56f6b78b584c436c9e3da30bd56ea0f0 = new L.RegularPolygonMarker(
+                [35.401968, -119.738205],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 199.00126731053632, "stroke": true, "weight": 3}
+            ).addTo(map_af3d772ed6c643d4b40630b46f80f19e);
+        
+    
+            regular_polygon_marker_56f6b78b584c436c9e3da30bd56ea0f0.bindTooltip(
+                `<div>
+                     Pool ID: Cymric:Sheep Springs:Monterey
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_405f90fb64e94d29907ebe3ae5e15830 = L.polyline(
+                [[34.6222, -117.1001], [38.6932745, -121.7397045]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_af3d772ed6c643d4b40630b46f80f19e);
+        
+    
+            poly_line_405f90fb64e94d29907ebe3ae5e15830.bindTooltip(
+                `<div>
+                     Emitter: CEMEX Construction Materials Pacific LLC<br>Pool ID: Crossroads Gas (ABD)::npool
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_898f5f40471d435aa2f954b5f50bee0f = new L.RegularPolygonMarker(
+                [38.6932745, -121.7397045],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 226.03365205394002, "stroke": true, "weight": 3}
+            ).addTo(map_af3d772ed6c643d4b40630b46f80f19e);
+        
+    
+            regular_polygon_marker_898f5f40471d435aa2f954b5f50bee0f.bindTooltip(
+                `<div>
+                     Pool ID: Crossroads Gas (ABD)::npool
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8ecfa42edced4c92b7f6c186774a6dfe = L.polyline(
+                [[34.6222, -117.1001], [35.610376, -119.973376]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_af3d772ed6c643d4b40630b46f80f19e);
+        
+    
+            poly_line_8ecfa42edced4c92b7f6c186774a6dfe.bindTooltip(
+                `<div>
+                     Emitter: CEMEX Construction Materials Pacific LLC<br>Pool ID: Shale Point Gas (ABD):pool
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_a080c517802e4f59b8ed63f410631fc6 = new L.RegularPolygonMarker(
+                [35.610376, -119.973376],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 201.88110909798797, "stroke": true, "weight": 3}
+            ).addTo(map_af3d772ed6c643d4b40630b46f80f19e);
+        
+    
+            regular_polygon_marker_a080c517802e4f59b8ed63f410631fc6.bindTooltip(
+                `<div>
+                     Pool ID: Shale Point Gas (ABD):pool
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_6c8d300b22c94a65b00536909c17b7b3 = L.polyline(
+                [[34.6222, -117.1001], [34.48967156, -118.8969405]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_af3d772ed6c643d4b40630b46f80f19e);
+        
+    
+            poly_line_6c8d300b22c94a65b00536909c17b7b3.bindTooltip(
+                `<div>
+                     Emitter: CEMEX Construction Materials Pacific LLC<br>Pool ID: Sespe:Tar Creek-Topatopa:Coldwater
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_b17e62485f794b34ae8f1e12e038ccdc = new L.RegularPolygonMarker(
+                [34.48967156, -118.8969405],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 174.39639756361618, "stroke": true, "weight": 3}
+            ).addTo(map_af3d772ed6c643d4b40630b46f80f19e);
+        
+    
+            regular_polygon_marker_b17e62485f794b34ae8f1e12e038ccdc.bindTooltip(
+                `<div>
+                     Pool ID: Sespe:Tar Creek-Topatopa:Coldwater
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9994587942874030b068c58ea81b1d32 = L.polyline(
+                [[34.6222, -117.1001], [34.262003195, -118.44270525]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_af3d772ed6c643d4b40630b46f80f19e);
+        
+    
+            poly_line_9994587942874030b068c58ea81b1d32.bindTooltip(
+                `<div>
+                     Emitter: CEMEX Construction Materials Pacific LLC<br>Pool ID: Pacoima (ABD)::Modelo Gas Zone
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_fb0b5abc8d9948f0abb99a2a96e45dac = new L.RegularPolygonMarker(
+                [34.262003195, -118.44270525],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 161.67786356264645, "stroke": true, "weight": 3}
+            ).addTo(map_af3d772ed6c643d4b40630b46f80f19e);
+        
+    
+            regular_polygon_marker_fb0b5abc8d9948f0abb99a2a96e45dac.bindTooltip(
+                `<div>
+                     Pool ID: Pacoima (ABD)::Modelo Gas Zone
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_159c8312b75c480182083145203d21d3 = L.polyline(
+                [[34.6222, -117.1001], [35.590945, -119.425183]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_af3d772ed6c643d4b40630b46f80f19e);
+        
+    
+            poly_line_159c8312b75c480182083145203d21d3.bindTooltip(
+                `<div>
+                     Emitter: CEMEX Construction Materials Pacific LLC<br>Pool ID: Wasco:pool
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_feda712dc7394a079ce077cc69bede76 = new L.RegularPolygonMarker(
+                [35.590945, -119.425183],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 206.21347384623047, "stroke": true, "weight": 3}
+            ).addTo(map_af3d772ed6c643d4b40630b46f80f19e);
+        
+    
+            regular_polygon_marker_feda712dc7394a079ce077cc69bede76.bindTooltip(
+                `<div>
+                     Pool ID: Wasco:pool
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_86672eba72ca4279ba4e0a6c7829b753 = L.polyline(
+                [[34.6222, -117.1001], [38.78150133, -121.6941624]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_af3d772ed6c643d4b40630b46f80f19e);
+        
+    
+            poly_line_86672eba72ca4279ba4e0a6c7829b753.bindTooltip(
+                `<div>
+                     Emitter: CEMEX Construction Materials Pacific LLC<br>Pool ID: Knights Landing Gas:Main:Starkey
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_4c76ae93a06542b4b14dc92521cd72ed = new L.RegularPolygonMarker(
+                [38.78150133, -121.6941624],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 226.95461158005767, "stroke": true, "weight": 3}
+            ).addTo(map_af3d772ed6c643d4b40630b46f80f19e);
+        
+    
+            regular_polygon_marker_4c76ae93a06542b4b14dc92521cd72ed.bindTooltip(
+                `<div>
+                     Pool ID: Knights Landing Gas:Main:Starkey
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f31e3c928d1544aa89e8a689b459a58e = L.polyline(
+                [[34.6222, -117.1001], [34.340934365, -119.531562]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_af3d772ed6c643d4b40630b46f80f19e);
+        
+    
+            poly_line_f31e3c928d1544aa89e8a689b459a58e.bindTooltip(
+                `<div>
+                     Emitter: CEMEX Construction Materials Pacific LLC<br>Pool ID: Carpinteria Offshore (ABD):pool
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_c549f596d6404819b737b2cb028c7a81 = new L.RegularPolygonMarker(
+                [34.340934365, -119.531562],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 171.3604732984756, "stroke": true, "weight": 3}
+            ).addTo(map_af3d772ed6c643d4b40630b46f80f19e);
+        
+    
+            regular_polygon_marker_c549f596d6404819b737b2cb028c7a81.bindTooltip(
+                `<div>
+                     Pool ID: Carpinteria Offshore (ABD):pool
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_65b14c6151e84729b1face7a775a6236 = L.polyline(
+                [[34.6222, -117.1001], [35.350923120000004, -119.66644585]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_af3d772ed6c643d4b40630b46f80f19e);
+        
+    
+            poly_line_65b14c6151e84729b1face7a775a6236.bindTooltip(
+                `<div>
+                     Emitter: CEMEX Construction Materials Pacific LLC<br>Pool ID: Cymric:Welport:Tulare-Antelope
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_3bd5025aa9fe4b75aabc5f6f01463df0 = new L.RegularPolygonMarker(
+                [35.350923120000004, -119.66644585],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 198.29681845894285, "stroke": true, "weight": 3}
+            ).addTo(map_af3d772ed6c643d4b40630b46f80f19e);
+        
+    
+            regular_polygon_marker_3bd5025aa9fe4b75aabc5f6f01463df0.bindTooltip(
+                `<div>
+                     Pool ID: Cymric:Welport:Tulare-Antelope
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_fa20541ad03d4936a4390d062e51de99 = L.polyline(
+                [[34.6222, -117.1001], [35.521210499999995, -119.8601235]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_af3d772ed6c643d4b40630b46f80f19e);
+        
+    
+            poly_line_fa20541ad03d4936a4390d062e51de99.bindTooltip(
+                `<div>
+                     Emitter: CEMEX Construction Materials Pacific LLC<br>Pool ID: Antelope Hills:Williams:West Block-Button Bed & Agua
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_a79d25529a6441a2a8425a045ff1ff52 = new L.RegularPolygonMarker(
+                [35.521210499999995, -119.8601235],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 200.81629269856117, "stroke": true, "weight": 3}
+            ).addTo(map_af3d772ed6c643d4b40630b46f80f19e);
+        
+    
+            regular_polygon_marker_a79d25529a6441a2a8425a045ff1ff52.bindTooltip(
+                `<div>
+                     Pool ID: Antelope Hills:Williams:West Block-Button Bed & Agua
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0cace702f8d94c2f90347f2ceb12334c = L.polyline(
+                [[34.6222, -117.1001], [39.01183202, -122.070601]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_af3d772ed6c643d4b40630b46f80f19e);
+        
+    
+            poly_line_0cace702f8d94c2f90347f2ceb12334c.bindTooltip(
+                `<div>
+                     Emitter: CEMEX Construction Materials Pacific LLC<br>Pool ID: Arbuckle Gas::Forbes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_b5c504df513f4277929ac640ade2d686 = new L.RegularPolygonMarker(
+                [39.01183202, -122.070601],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 226.1694326276305, "stroke": true, "weight": 3}
+            ).addTo(map_af3d772ed6c643d4b40630b46f80f19e);
+        
+    
+            regular_polygon_marker_b5c504df513f4277929ac640ade2d686.bindTooltip(
+                `<div>
+                     Pool ID: Arbuckle Gas::Forbes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
