@@ -48,12 +48,17 @@
 
   .column {
     float: left;
-    width: 40%;
+    width: 22%;
     margin-bottom: 16px;
     padding: 0 8px;
   }
 
   .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 8px;
   }
@@ -79,13 +84,6 @@
     color: grey;
   }
 
-  @media screen and (max-width: 650px) {
-    .column {
-      width: 100%;
-      display: block;
-    }
-  }
-
 </style>
 </head>
 <body>
@@ -94,16 +92,11 @@
     <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
     <a href="dashboard.html"><i class="fa fa-area-chart"></i> Dashboard</a>
     <a href="contributors.html"><i class="fa fa-fw fa-user"></i> Meet the Team</a>
+    <a href="faq.html"><i class="fa fa-book"></i> FAQ</a>
     <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
   </div>
 
   <div class="main">
-    <div class="contributors">
-      <h1>Meet the Team</h1>
-      <p>Some text about who we are and what we do.</p>
-      <p>Blah blah blah...</p>
-    </div>
-
     <h2 style="text-align:center">Our Team</h2>
     <div class="row justify-content-center">
       <div class="column">
@@ -111,9 +104,9 @@
           <img src="/img/dylan.png" alt="Dylan" style="width:100%">
           <div class="container">
             <h2>Dylan Mair</h2>
-            <p class="title">Title</p>
-            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>dmair@ischool.berkeley.edu</p>
+            <p class="title">Subject Matter Expert</p>
+            <p style="height:100px;">My role is to ensure we provide context-ready answers to user questions using the best available data.</p>
+            <p style="font-size: 14px;">dmair@ischool.berkeley.edu</p>
           </div>
         </div>
       </div>
@@ -123,9 +116,9 @@
           <img src="/img/ashley.png" alt="Ashley" style="width:100%">
           <div class="container">
             <h2>Ashley Moss</h2>
-            <p class="title">Title</p>
-            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>ashley.moss@ischool.berkeley.edu</p>
+            <p class="title">Visualization creator</p>
+            <p style="height:100px;">My role is to make information easily accessible to non-technical users by creating a visual display.</p>
+            <p style="font-size: 14px;">ashley.moss@ischool.berkeley.edu</p>
           </div>
         </div>
       </div>
@@ -135,21 +128,21 @@
           <img src="/img/emma.png" alt="Emma" style="width:100%">
           <div class="container">
             <h2>Emma Tebbe</h2>
-            <p class="title">Title</p>
-            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>emma.tebbe@ischool.berkeley.edu</p>
+            <p class="title">Optimization & Modeling</p>
+            <p style="height:100px;">Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p style="font-size: 14px;">emma.tebbe@ischool.berkeley.edu</p>
           </div>
         </div>
       </div>
 
       <div class="column">
         <div class="card">
-          <img src="/img/emma.png" alt="Bona" style="width:100%">
+          <img src="/img/bona.png" alt="Bona" style="width:100%">
           <div class="container">
             <h2>Bona Lee</h2>
-            <p class="title">Title</p>
-            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>bona.lee@ischool.berkeley.edu</p>
+            <p class="title">Web application</p>
+            <p style="height:100px;">Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p style="font-size: 14px;">bona.lee@ischool.berkeley.edu</p>
           </div>
         </div>
       </div>
