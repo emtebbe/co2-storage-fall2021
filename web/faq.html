@@ -6,70 +6,71 @@
   <style>
   body {font-family: "Lato", sans-serif;}
 
-  .sidebar {
-    height: 100%;
-    width: 200px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #4e73df;
-    overflow-x: hidden;
-    padding-top: 16px;
+  /* Header/logo Title */
+  .header {
+    padding: 1px;
+    text-align: center;
+    background: white;
+    color: #4ba173;
   }
 
-  .sidebar a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
+  /* Increase the font size of the heading */
+  .header h1 {
+    font-size: 35px;
+  }
+
+  /* Style the navbar */
+  .navbar {
+    overflow: hidden;
+    background-color: #4ba173;
+  }
+
+  /* Style the navigation bar links */
+  .navbar a {
+    float: left;
     display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
   }
 
-  .sidebar a:hover {
-    color: grey;
+  /* Change color on hover */
+  .navbar a:hover {
+    background-color: #9e9e9e;
+    color: black;
+  }
+
+  /* Active/current link */
+  .navbar a.active {
+    background-color: #085631;
+    color: white;
   }
 
   .main {
-    margin-left: 200px; /* Same as the width of the sidenav */
-    padding: 0px 10px;
-    background-color: #f1f1f1;
+    padding: 10px;
+    background-color: white;
     height: 100%;
-  }
-
-  @media screen and (max-height: 450px) {
-    .sidebar {padding-top: 15px;}
-    .sidebar a {font-size: 18px;}
-  }
-
-  .header {
-    padding: 50px;
-    text-align: center;
-    color: #4e73df;
-  }
-
-  h1 {
-    font-size: 50px;
-    word-break: break-all;
   }
 
 </style>
 </head>
 <body>
+  <div class="header">
+    <img src="/img/logo.png" align="left"/>
+    <h1>Optimized Storage of Captured Carbon Dioxide in California</h1>
+  </div>
 
-  <div class="sidebar">
-    <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
-    <a href="dashboard.html"><i class="fa fa-area-chart"></i> Dashboard</a>
-    <a href="contributors.html"><i class="fa fa-fw fa-user"></i> Meet the Team</a>
-    <a href="faq.html"><i class="fa fa-book"></i> FAQ</a>
-    <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="faq.html" class="active">FAQ</a>
+    <a href="contributors.html">About Us</a>
   </div>
 
   <div class="main">
-    <div class="header">
-      <h1>FAQ</h1>
-      <hr>
-    </div>
+    <h1 style="text-align:center;color:#4ba173;">Frequently Asked Questions</h1>
+    <hr>
 
     <h2>Placeholder for FAQ page</h2>
     <p>...</p>

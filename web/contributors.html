@@ -6,40 +6,51 @@
   <style>
   body {font-family: "Lato", sans-serif;}
 
-  .sidebar {
-    height: 100%;
-    width: 200px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #4e73df;
-    overflow-x: hidden;
-    padding-top: 16px;
+  /* Header/logo Title */
+  .header {
+    padding: 1px;
+    text-align: center;
+    background: white;
+    color: #4ba173;
   }
 
-  .sidebar a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
+  /* Increase the font size of the heading */
+  .header h1 {
+    font-size: 35px;
+  }
+
+  /* Style the navbar */
+  .navbar {
+    overflow: hidden;
+    background-color: #4ba173;
+  }
+
+  /* Style the navigation bar links */
+  .navbar a {
+    float: left;
     display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
   }
 
-  .sidebar a:hover {
-    color: grey;
+  /* Change color on hover */
+  .navbar a:hover {
+    background-color: #9e9e9e;
+    color: black;
+  }
+
+  /* Active/current link */
+  .navbar a.active {
+    background-color: #085631;
+    color: white;
   }
 
   .main {
-    margin-left: 200px; /* Same as the width of the sidenav */
-    padding: 0px 10px;
-    background-color: #f1f1f1;
+    padding: 10px;
+    background-color: white;
     height: 100%;
-  }
-
-  @media screen and (max-height: 450px) {
-    .sidebar {padding-top: 15px;}
-    .sidebar a {font-size: 18px;}
   }
 
   *, *:before, *:after {
@@ -48,7 +59,7 @@
 
   .column {
     float: left;
-    width: 22%;
+    width: 23.5%;
     margin-bottom: 16px;
     padding: 0 8px;
   }
@@ -61,13 +72,6 @@
     height: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 8px;
-  }
-
-  .contributors {
-    padding: 50px;
-    text-align: center;
-    background-color: #4e73df;
-    color: white;
   }
 
   .container {
@@ -84,41 +88,41 @@
     color: grey;
   }
 
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+  }
+
 </style>
 </head>
 <body>
+  <div class="header">
+    <img src="/img/logo.png" align="left"/>
+    <h1>Optimized Storage of Captured Carbon Dioxide in California</h1>
+  </div>
 
-  <div class="sidebar">
-    <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
-    <a href="dashboard.html"><i class="fa fa-area-chart"></i> Dashboard</a>
-    <a href="contributors.html"><i class="fa fa-fw fa-user"></i> Meet the Team</a>
-    <a href="faq.html"><i class="fa fa-book"></i> FAQ</a>
-    <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contributors.html" class="active">About Us</a>
   </div>
 
   <div class="main">
-    <h2 style="text-align:center">Our Team</h2>
-    <div class="row justify-content-center">
+    <h1 style="text-align:center;color:#4ba173;">Meet the Team</h1>
+    <hr>
+
+    <div class="row">
       <div class="column">
         <div class="card">
           <img src="/img/dylan.png" alt="Dylan" style="width:100%">
           <div class="container">
             <h2>Dylan Mair</h2>
-            <p class="title">Subject Matter Expert</p>
-            <p style="height:100px;">My role is to ensure we provide context-ready answers to user questions using the best available data.</p>
+            <p class="title">Oil & Gas Subject Matter Expert</p>
+            <p style="height:90px;">My role is to ensure we provide context-ready answers to user questions using the best available data.</p>
             <p style="font-size: 14px;">dmair@ischool.berkeley.edu</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="card">
-          <img src="/img/ashley.png" alt="Ashley" style="width:100%">
-          <div class="container">
-            <h2>Ashley Moss</h2>
-            <p class="title">Visualization creator</p>
-            <p style="height:100px;">My role is to make information easily accessible to non-technical users by creating a visual display.</p>
-            <p style="font-size: 14px;">ashley.moss@ischool.berkeley.edu</p>
           </div>
         </div>
       </div>
@@ -129,8 +133,20 @@
           <div class="container">
             <h2>Emma Tebbe</h2>
             <p class="title">Optimization & Modeling</p>
-            <p style="height:100px;">Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p style="height:90px;">Some text that describes me lorem ipsum ipsum lorem.</p>
             <p style="font-size: 14px;">emma.tebbe@ischool.berkeley.edu</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="/img/ashley.png" alt="Ashley" style="width:100%">
+          <div class="container">
+            <h2>Ashley Moss</h2>
+            <p class="title">Visualization Creator</p>
+            <p style="height:90px;">My role is to make information easily accessible to non-technical users by creating a visual display.</p>
+            <p style="font-size: 14px;">ashley.moss@ischool.berkeley.edu</p>
           </div>
         </div>
       </div>
@@ -140,8 +156,8 @@
           <img src="/img/bona.png" alt="Bona" style="width:100%">
           <div class="container">
             <h2>Bona Lee</h2>
-            <p class="title">Web application</p>
-            <p style="height:100px;">Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p class="title">Web Developer</p>
+            <p style="height:90px;">My role is to create a web application that delivers our analysis in a user-friendly way.</p>
             <p style="font-size: 14px;">bona.lee@ischool.berkeley.edu</p>
           </div>
         </div>
