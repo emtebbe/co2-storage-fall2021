@@ -1,2 +1,3 @@
-# co2-storage-web-fall2021
-Repository for Web Development of Carbon Dioxide Storage Optimization
+# Website Links
+- **Dev**: [Link](https://dev.dwszciew6pn0v.amplifyapp.com/dashboard.html)
+- **Test**: [Link](https://test.dwszciew6pn0v.amplifyapp.com/dashboard.html)
