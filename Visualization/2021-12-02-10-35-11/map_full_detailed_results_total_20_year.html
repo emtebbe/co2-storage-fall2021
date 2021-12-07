@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_095a989fbf9042babb006210117ee7dd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-dvf/0.3.0/leaflet-dvf.markers.min.js"></script>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_095a989fbf9042babb006210117ee7dd" ></div>
+        
+</body>
+<script>    
+    
+            var map_095a989fbf9042babb006210117ee7dd = L.map(
+                "map_095a989fbf9042babb006210117ee7dd",
+                {
+                    center: [36.3302, -119.2921],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2d03efc492d04ceb907610fd224e377c = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            var circle_marker_8a742ca1b0284e5db566715b74d84209 = L.circleMarker(
+                [33.7691, -118.2662],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            circle_marker_8a742ca1b0284e5db566715b74d84209.bindTooltip(
+                `<div>
+                     Emitter: Harbor Generating Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_765eea2abf674a3d86b6fe706afc8e72 = L.polyline(
+                [[33.7691, -118.2662], [33.77899910000001, -118.23265220000002]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            poly_line_765eea2abf674a3d86b6fe706afc8e72.bindTooltip(
+                `<div>
+                     Emitter: Harbor Generating Station<br>Pool ID: Wilmington:Fault Block III:Ranger
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_1e76460e87684554ae36a153e1ebf547 = new L.RegularPolygonMarker(
+                [33.77899910000001, -118.23265220000002],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": -19.450888223118497, "stroke": true, "weight": 3}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            regular_polygon_marker_1e76460e87684554ae36a153e1ebf547.bindTooltip(
+                `<div>
+                     Pool ID: Wilmington:Fault Block III:Ranger
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c12df93a7f7449a9aa60062362d97d2e = L.polyline(
+                [[33.7691, -118.2662], [33.78242705, -118.258668]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            poly_line_c12df93a7f7449a9aa60062362d97d2e.bindTooltip(
+                `<div>
+                     Emitter: Harbor Generating Station<br>Pool ID: Old Wilmington (ABD):Fault Block I Onshore:pool
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_85955d0f8d7849be9053cbd2a1829003 = new L.RegularPolygonMarker(
+                [33.78242705, -118.258668],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": -64.73223979015387, "stroke": true, "weight": 3}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            regular_polygon_marker_85955d0f8d7849be9053cbd2a1829003.bindTooltip(
+                `<div>
+                     Pool ID: Old Wilmington (ABD):Fault Block I Onshore:pool
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_5dc2359f976343a995d76715a162d4e9 = L.polyline(
+                [[33.7691, -118.2662], [33.766817, -118.2310502]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            poly_line_5dc2359f976343a995d76715a162d4e9.bindTooltip(
+                `<div>
+                     Emitter: Harbor Generating Station<br>Pool ID: Wilmington:Fault Block III:Tar
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_22d396a09d2e412abf9655820fd07eab = new L.RegularPolygonMarker(
+                [33.766817, -118.2310502],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 4.4566858998190355, "stroke": true, "weight": 3}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            regular_polygon_marker_22d396a09d2e412abf9655820fd07eab.bindTooltip(
+                `<div>
+                     Pool ID: Wilmington:Fault Block III:Tar
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f24dd94d18e747878e913c6da0b9e587 = L.circleMarker(
+                [33.854967, -118.336907],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            circle_marker_f24dd94d18e747878e913c6da0b9e587.bindTooltip(
+                `<div>
+                     Emitter: TORRANCE REFINING COMPANY LLC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7ab7467b39094ff0802be0ec8c2895c2 = L.polyline(
+                [[33.854967, -118.336907], [34.032260449999995, -118.31267125]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            poly_line_7ab7467b39094ff0802be0ec8c2895c2.bindTooltip(
+                `<div>
+                     Emitter: TORRANCE REFINING COMPANY LLC<br>Pool ID: Las Cienegas:Murphy:npool
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_f64bf1c559f347e3828718844ead8c82 = new L.RegularPolygonMarker(
+                [34.032260449999995, -118.31267125],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": -83.49358437981482, "stroke": true, "weight": 3}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            regular_polygon_marker_f64bf1c559f347e3828718844ead8c82.bindTooltip(
+                `<div>
+                     Pool ID: Las Cienegas:Murphy:npool
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8c8e3c27879f44a789bfe2ed1ce81fe7 = L.polyline(
+                [[33.854967, -118.336907], [34.07335698, -118.357065]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            poly_line_8c8e3c27879f44a789bfe2ed1ce81fe7.bindTooltip(
+                `<div>
+                     Emitter: TORRANCE REFINING COMPANY LLC<br>Pool ID: Salt Lake:pool
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_d00bda2062ad41e888cc81c9b57e203a = new L.RegularPolygonMarker(
+                [34.07335698, -118.357065],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 265.5964264658711, "stroke": true, "weight": 3}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            regular_polygon_marker_d00bda2062ad41e888cc81c9b57e203a.bindTooltip(
+                `<div>
+                     Pool ID: Salt Lake:pool
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d89837e9937e4f4fb65aa990a31559b5 = L.circleMarker(
+                [33.7783, -118.2351],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            circle_marker_d89837e9937e4f4fb65aa990a31559b5.bindTooltip(
+                `<div>
+                     Emitter: ULTRAMAR INC WILMINGTON REFINERY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7daa55dd36834a7a8d09251bb983985b = L.polyline(
+                [[33.7783, -118.2351], [33.94305403, -118.065515]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            poly_line_7daa55dd36834a7a8d09251bb983985b.bindTooltip(
+                `<div>
+                     Emitter: ULTRAMAR INC WILMINGTON REFINERY<br>Pool ID: Santa Fe Springs:pool
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_8fd9bacbf54a41828ad7d4baf6e54622 = new L.RegularPolygonMarker(
+                [33.94305403, -118.065515],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": -49.299504817434126, "stroke": true, "weight": 3}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            regular_polygon_marker_8fd9bacbf54a41828ad7d4baf6e54622.bindTooltip(
+                `<div>
+                     Pool ID: Santa Fe Springs:pool
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_041e7a0822d948c493f4db5bad3a2ba2 = L.polyline(
+                [[33.7783, -118.2351], [33.718945000000005, -118.114091]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            poly_line_041e7a0822d948c493f4db5bad3a2ba2.bindTooltip(
+                `<div>
+                     Emitter: ULTRAMAR INC WILMINGTON REFINERY<br>Pool ID: Belmont Offshore:Surfside:npool
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_acc61b2f32f0471e894c51aaee565ee1 = new L.RegularPolygonMarker(
+                [33.718945000000005, -118.114091],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 30.45398501238965, "stroke": true, "weight": 3}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            regular_polygon_marker_acc61b2f32f0471e894c51aaee565ee1.bindTooltip(
+                `<div>
+                     Pool ID: Belmont Offshore:Surfside:npool
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3a649d4ea2b1407a895b73cc3e5e44d9 = L.circleMarker(
+                [38.094095, -121.380788],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            circle_marker_3a649d4ea2b1407a895b73cc3e5e44d9.bindTooltip(
+                `<div>
+                     Emitter: LODI ENERGY CENTER
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4c8e875681054031a3e5bbaa9d2eb1bd = L.polyline(
+                [[38.094095, -121.380788], [38.190216875, -121.5635585]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            poly_line_4c8e875681054031a3e5bbaa9d2eb1bd.bindTooltip(
+                `<div>
+                     Emitter: LODI ENERGY CENTER<br>Pool ID: River Island Gas::Mokelumne River
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_4589d4fa9da1477b93dbb7479d93e20a = new L.RegularPolygonMarker(
+                [38.190216875, -121.5635585],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 213.6039275807612, "stroke": true, "weight": 3}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            regular_polygon_marker_4589d4fa9da1477b93dbb7479d93e20a.bindTooltip(
+                `<div>
+                     Pool ID: River Island Gas::Mokelumne River
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_047ee741d9b54125a68c2e3576d58a0a = L.circleMarker(
+                [33.79699, -118.23971],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            circle_marker_047ee741d9b54125a68c2e3576d58a0a.bindTooltip(
+                `<div>
+                     Emitter: Valero Wilmington Asphalt Plant
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b071a553d47343d9890a6c668fd6078c = L.polyline(
+                [[33.79699, -118.23971], [33.77002727, -118.2378665]],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            poly_line_b071a553d47343d9890a6c668fd6078c.bindTooltip(
+                `<div>
+                     Emitter: Valero Wilmington Asphalt Plant<br>Pool ID: Wilmington:Fault Block II:Upper Terminal
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_f0599a9a46cd4e59b594188485fba780 = new L.RegularPolygonMarker(
+                [33.77002727, -118.2378665],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 86.73294540483722, "stroke": true, "weight": 3}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            regular_polygon_marker_f0599a9a46cd4e59b594188485fba780.bindTooltip(
+                `<div>
+                     Pool ID: Wilmington:Fault Block II:Upper Terminal
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f315d9071c784d89989fa4a60252ac54 = L.circleMarker(
+                [33.7688, -118.1009],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            circle_marker_f315d9071c784d89989fa4a60252ac54.bindTooltip(
+                `<div>
+                     Emitter: AES Alamitos
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2487f34a158d4fd0974d98fb85947b57 = L.polyline(
+                [[33.7688, -118.1009], [33.90273183, -117.8117501]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            poly_line_2487f34a158d4fd0974d98fb85947b57.bindTooltip(
+                `<div>
+                     Emitter: AES Alamitos<br>Pool ID: Yorba Linda (ABD)::Shallow
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_37ab48ef310b46039972523be25f503c = new L.RegularPolygonMarker(
+                [33.90273183, -117.8117501],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": -28.95205031537361, "stroke": true, "weight": 3}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            regular_polygon_marker_37ab48ef310b46039972523be25f503c.bindTooltip(
+                `<div>
+                     Pool ID: Yorba Linda (ABD)::Shallow
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3d97335a44f54dd8b4d1b68be7a52475 = L.circleMarker(
+                [35.4185, -119.0112],
+                {"bubblingMouseEvents": true, "color": "cadetblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cadetblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            circle_marker_3d97335a44f54dd8b4d1b68be7a52475.bindTooltip(
+                `<div>
+                     Emitter: TRICOR REFINING LLC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_de411066c7be47b28c782b4a6d364fc8 = L.polyline(
+                [[35.4185, -119.0112], [35.489568500000004, -118.8975205]],
+                {"bubblingMouseEvents": true, "color": "cadetblue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "cadetblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            poly_line_de411066c7be47b28c782b4a6d364fc8.bindTooltip(
+                `<div>
+                     Emitter: TRICOR REFINING LLC<br>Pool ID: Round Mountain:Main:Pyramid Hill
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_11c751cd0f2f4eb7aa47055b94e19f82 = new L.RegularPolygonMarker(
+                [35.489568500000004, -118.8975205],
+                {"bubblingMouseEvents": true, "color": "cadetblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cadetblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": -37.34872321576616, "stroke": true, "weight": 3}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            regular_polygon_marker_11c751cd0f2f4eb7aa47055b94e19f82.bindTooltip(
+                `<div>
+                     Pool ID: Round Mountain:Main:Pyramid Hill
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1b2b4347597e46b5b8ff9b15c86760b4 = L.polyline(
+                [[35.4185, -119.0112], [35.493691, -118.9012855]],
+                {"bubblingMouseEvents": true, "color": "cadetblue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "cadetblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            poly_line_1b2b4347597e46b5b8ff9b15c86760b4.bindTooltip(
+                `<div>
+                     Emitter: TRICOR REFINING LLC<br>Pool ID: Round Mountain:Main:Vedder
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_bbbf8f30ce45474d9bb3eb85b8186687 = new L.RegularPolygonMarker(
+                [35.493691, -118.9012855],
+                {"bubblingMouseEvents": true, "color": "cadetblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cadetblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": -39.86656793760352, "stroke": true, "weight": 3}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            regular_polygon_marker_bbbf8f30ce45474d9bb3eb85b8186687.bindTooltip(
+                `<div>
+                     Pool ID: Round Mountain:Main:Vedder
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3807aa687cd84a8bab69ae697860cc4a = L.circleMarker(
+                [38.3383, -121.1239],
+                {"bubblingMouseEvents": true, "color": "darkpurple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkpurple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            circle_marker_3807aa687cd84a8bab69ae697860cc4a.bindTooltip(
+                `<div>
+                     Emitter: Cosumnes Power Plant
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_377d7267d978422b8b7fec8d172ce802 = L.polyline(
+                [[38.3383, -121.1239], [37.940883, -121.678394]],
+                {"bubblingMouseEvents": true, "color": "darkpurple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkpurple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            poly_line_377d7267d978422b8b7fec8d172ce802.bindTooltip(
+                `<div>
+                     Emitter: Cosumnes Power Plant<br>Pool ID: Brentwood, East, Gas::Third Massive
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_8942897220c24baea94a434a98431991 = new L.RegularPolygonMarker(
+                [37.940883, -121.678394],
+                {"bubblingMouseEvents": true, "color": "darkpurple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkpurple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 137.6057888652973, "stroke": true, "weight": 3}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            regular_polygon_marker_8942897220c24baea94a434a98431991.bindTooltip(
+                `<div>
+                     Pool ID: Brentwood, East, Gas::Third Massive
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_82e71ddad61543b5ad0fd0ef8cdec6df = L.circleMarker(
+                [33.8099, -118.2383],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            circle_marker_82e71ddad61543b5ad0fd0ef8cdec6df.bindTooltip(
+                `<div>
+                     Emitter: Los Angeles Refinery (LAR)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_2beabbaef2c04b06a16afe9ccc1f50be = L.polyline(
+                [[33.8099, -118.2383], [33.97246071, -118.0041986]],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "white", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            poly_line_2beabbaef2c04b06a16afe9ccc1f50be.bindTooltip(
+                `<div>
+                     Emitter: Los Angeles Refinery (LAR)<br>Pool ID: Whittier:Central:Upper
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_bf87195afb864463b5256fcf291fd380 = new L.RegularPolygonMarker(
+                [33.97246071, -118.0041986],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": -39.71762475341774, "stroke": true, "weight": 3}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            regular_polygon_marker_bf87195afb864463b5256fcf291fd380.bindTooltip(
+                `<div>
+                     Pool ID: Whittier:Central:Upper
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ad37493023a8497699cc09449976f1e6 = L.polyline(
+                [[33.8099, -118.2383], [34.40079943, -118.643247]],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "white", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            poly_line_ad37493023a8497699cc09449976f1e6.bindTooltip(
+                `<div>
+                     Emitter: Los Angeles Refinery (LAR)<br>Pool ID: Newhall-Potrero::37623
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_ab7e7c25cbcc4b1095448dcff704e5c5 = new L.RegularPolygonMarker(
+                [34.40079943, -118.643247],
+                {"bubblingMouseEvents": true, "color": "white", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 240.20048792907448, "stroke": true, "weight": 3}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            regular_polygon_marker_ab7e7c25cbcc4b1095448dcff704e5c5.bindTooltip(
+                `<div>
+                     Pool ID: Newhall-Potrero::37623
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_876d0a7d7bce4349b15f64293bb5960b = L.circleMarker(
+                [38.07167, -122.13975],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            circle_marker_876d0a7d7bce4349b15f64293bb5960b.bindTooltip(
+                `<div>
+                     Emitter: VALERO REFINING CO - CALI FORNIA BENICIA REFINERY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_6aedf874f4b246e1af221be73a3929e1 = L.polyline(
+                [[38.07167, -122.13975], [38.53639727, -121.8932637]],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            poly_line_6aedf874f4b246e1af221be73a3929e1.bindTooltip(
+                `<div>
+                     Emitter: VALERO REFINING CO - CALI FORNIA BENICIA REFINERY<br>Pool ID: Winters Gas:pool
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_d14ae0693d954a19b9e1bf3f4de27b14 = new L.RegularPolygonMarker(
+                [38.53639727, -121.8932637],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": -67.24146845053497, "stroke": true, "weight": 3}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            regular_polygon_marker_d14ae0693d954a19b9e1bf3f4de27b14.bindTooltip(
+                `<div>
+                     Pool ID: Winters Gas:pool
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_673667d6352f4cdeb3d05c9191a766bc = L.polyline(
+                [[38.07167, -122.13975], [38.32266323, -121.643922]],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            poly_line_673667d6352f4cdeb3d05c9191a766bc.bindTooltip(
+                `<div>
+                     Emitter: VALERO REFINING CO - CALI FORNIA BENICIA REFINERY<br>Pool ID: Medora Lake Gas::Winters
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_ba67104d9eb1424ebd4f29b95f967856 = new L.RegularPolygonMarker(
+                [38.32266323, -121.643922],
+                {"bubblingMouseEvents": true, "color": "pink", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": -32.52488408727126, "stroke": true, "weight": 3}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            regular_polygon_marker_ba67104d9eb1424ebd4f29b95f967856.bindTooltip(
+                `<div>
+                     Pool ID: Medora Lake Gas::Winters
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2023990b26574fa79d6a068fc0c96c9b = L.circleMarker(
+                [37.4878, -120.8956],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            circle_marker_2023990b26574fa79d6a068fc0c96c9b.bindTooltip(
+                `<div>
+                     Emitter: Walnut Energy Center
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_32c68d8bf0b04f4099291109841ef7e6 = L.polyline(
+                [[37.4878, -120.8956], [37.940883, -121.678394]],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            poly_line_32c68d8bf0b04f4099291109841ef7e6.bindTooltip(
+                `<div>
+                     Emitter: Walnut Energy Center<br>Pool ID: Brentwood, East, Gas::Third Massive
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_b0228f1328c748baaa35d44b3b95f1b6 = new L.RegularPolygonMarker(
+                [37.940883, -121.678394],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 215.83703971496973, "stroke": true, "weight": 3}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            regular_polygon_marker_b0228f1328c748baaa35d44b3b95f1b6.bindTooltip(
+                `<div>
+                     Pool ID: Brentwood, East, Gas::Third Massive
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_be13cedb988c456b89e7bc6e2b537018 = L.circleMarker(
+                [36.6894, -119.7399],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            circle_marker_be13cedb988c456b89e7bc6e2b537018.bindTooltip(
+                `<div>
+                     Emitter: Malaga Power, LLC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4dc75af6c5c841c89eb56f8b142dd11d = L.polyline(
+                [[36.6894, -119.7399], [36.93252036, -120.4453747]],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            poly_line_4dc75af6c5c841c89eb56f8b142dd11d.bindTooltip(
+                `<div>
+                     Emitter: Malaga Power, LLC<br>Pool ID: Merrill Avenue, Southeast, Gas::Blewett
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_873f1fdda06545cab64e5baab5e195b8 = new L.RegularPolygonMarker(
+                [36.93252036, -120.4453747],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 202.98790938801898, "stroke": true, "weight": 3}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            regular_polygon_marker_873f1fdda06545cab64e5baab5e195b8.bindTooltip(
+                `<div>
+                     Pool ID: Merrill Avenue, Southeast, Gas::Blewett
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_64be978fcafa4f54873b49efed0432c8 = L.circleMarker(
+                [34.9556, -118.844],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            circle_marker_64be978fcafa4f54873b49efed0432c8.bindTooltip(
+                `<div>
+                     Emitter: Pastoria Energy Facility
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c2042bbf54e44be98003a5d2da43f8d1 = L.polyline(
+                [[34.9556, -118.844], [34.419582815, -119.83281309999998]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            poly_line_c2042bbf54e44be98003a5d2da43f8d1.bindTooltip(
+                `<div>
+                     Emitter: Pastoria Energy Facility<br>Pool ID: La Goleta Gas::Vaqueros
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var regular_polygon_marker_ebcc62da15f3421781d4a3157b9da7c9 = new L.RegularPolygonMarker(
+                [34.419582815, -119.83281309999998],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "numberOfSides": 3, "opacity": 1.0, "radius": 4, "rotation": 146.4440183964554, "stroke": true, "weight": 3}
+            ).addTo(map_095a989fbf9042babb006210117ee7dd);
+        
+    
+            regular_polygon_marker_ebcc62da15f3421781d4a3157b9da7c9.bindTooltip(
+                `<div>
+                     Pool ID: La Goleta Gas::Vaqueros
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
